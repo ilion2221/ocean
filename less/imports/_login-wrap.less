@@ -1,0 +1,207 @@
+/*========================================
+=            _login-wrap.less            =
+========================================*/
+
+.login-wrap {
+	margin-top: 46px;
+	padding-bottom: 84px;
+	@media (max-width: @screen-md-max) {}
+	@media (max-width: @screen-sm-max) {
+		padding-bottom: 40px;
+	}
+	@media (max-width: @screen-xs-max) {
+		margin-top: 20px;
+	}
+}
+
+.login-wrap_login-side {
+	width: 441px;
+	float: left;
+	border-right: 1px solid #d9d9d9;
+	padding-right: 60px;
+	@media (max-width: @screen-md-max) {}
+	@media (max-width: @screen-sm-max) {
+		padding-right: 20px;
+		width: 310px;
+	}
+	@media (max-width: @screen-xs-max) {
+		float: none;
+		border-right: 0;
+		padding-right: 0;
+		width: auto;
+		max-width: 310px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	form {
+		margin-top: 26px;
+	}
+	.m-input-wrap + .m-input-wrap {
+		margin-top: 34px;
+	}
+	.buttons-wrap {
+		margin-top: 40px;	
+	}
+	.buttons-wrap_enter-btn {
+		display: inline-block;
+		vertical-align: top;
+		width: 180px;
+		@media (max-width: @screen-md-max) {}
+		@media (max-width: @screen-sm-max) {
+			width: 130px;
+		}
+		@media (max-width: @screen-xs-max) {}
+	}
+	.buttons-wrap_renew-pass {
+		display: inline-block;
+		vertical-align: top;
+		margin-top: 11px;
+		margin-left: 47px;
+		@media (max-width: @screen-md-max) {}
+		@media (max-width: @screen-sm-max) {
+			margin-left: 20px;
+			margin-top: 8px;
+		}
+		@media (max-width: @screen-xs-max) {}
+		a {
+			text-decoration: none !important;
+			font-size: 15px;
+			color: #023064;
+			transition: all 0.3s ease;
+			border-bottom: 1px solid #023064;
+			&:hover {
+				color: #00b6f2;
+				border-bottom: 1px solid #00b6f2;
+			}
+		}
+	}
+}
+
+.login-wrap_login-side_title {
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #023064;
+	font-weight: 700;
+	@media (max-width: @screen-md-max) {}
+	@media (max-width: @screen-sm-max) {}
+	@media (max-width: @screen-xs-max) {
+		text-align: center;
+	}
+}
+
+.login-wrap_reg-side {
+	float: left;
+	width: 410px;
+	padding-left: 58px;
+	border-left: 1px solid #d9d9d9;
+	margin-left: -1px;
+	@media (max-width: @screen-md-max) {}
+	@media (max-width: @screen-sm-max) {
+		padding-left: 20px;
+	}
+	@media (max-width: @screen-xs-max) {
+		float: none;
+		margin-top: 30px;
+		padding-left: 0;
+		width: auto;
+		max-width: 410px;
+		margin-left: auto;
+		margin-right: auto;
+		border-left: 0;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		margin-top: 26px;
+		li + li {
+			margin-top: 5px;
+		}
+		li {
+			position: relative;
+			padding-left: 21px;
+			font-size: 15px;
+			color: #737373;
+		}
+		.check-icon {
+			fill: none;
+			stroke: #09b9f2;
+			stroke-width: 2px;
+			fill-rule: evenodd;
+		    width: 14px;
+		    height: 11px;
+		    position: absolute;
+		    top: 7px;
+		    left: -1px;
+		}
+	}
+}
+
+.login-wrap_reg-side_button  {
+	margin-top: 35px;
+	width: 240px;
+	@media (max-width: @screen-md-max) {}
+	@media (max-width: @screen-sm-max) {}
+	@media (max-width: @screen-xs-max) {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.login-wrap_reg-side_title {
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #023064;
+	font-weight: 700;
+	@media (max-width: @screen-md-max) {}
+	@media (max-width: @screen-sm-max) {}
+	@media (max-width: @screen-xs-max) {
+		text-align: center;
+	}
+}
+
+.login-wrap_reg-side_text {
+	margin-top: 24px;
+	font-size: 15px;
+	font-weight: 700;
+	color: #737373;
+	line-height: 24px;
+	p {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+/*=====  End of _login-wrap.less  ======*/
+
+
+.m-input-wrap {
+	input[type="text"], input[type="password"] {
+		background: #ffffff;
+		border: 1px solid #d9d9d9;
+		width: 100%;
+		height: 40px;
+		line-height: 38px;
+		padding-left: 10px;
+		padding-right: 10px;
+		box-shadow: 0px 0px 5px 0px rgba(128, 128, 128, 0.3) inset;
+	}
+	textarea {
+		background: #ffffff;
+		border: 1px solid #d9d9d9;
+		width: 100%;
+		height: 90px;
+		padding: 10px;
+		box-shadow: 0px 0px 5px 0px rgba(128, 128, 128, 0.3) inset;
+		resize: none;
+		margin-top: 5px;
+	}
+}
+
+.m-input-wrap_text {
+	font-size: 15px;
+	color: #737373;
+	& + input[type="text"], & + input[type="password"] {
+		margin-top: 5px;
+	}
+}

@@ -1,0 +1,739 @@
+doctype
+html
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, height=device-height, initial-scale=1, user-scalable=no, maximum-scale=1.0')
+		title index
+		include includes/css-links.jade
+
+	body
+		include includes/svg.jade
+		.page-wrapp
+			.content-without-footer
+				include includes/_header.jade
+				.container
+					.row
+						.col-md-5
+							include includes/_main-nav-wrap_catalog.jade
+						.col-md-15
+							.main-breadcrumbs
+								ul
+									li
+										a(href="#") Главная
+									li
+										a(href="#") Корзина
+									li
+										span Оформление заказа
+
+				.cart-steps-wrap
+					.container.clearfix
+						.cart-steps-wrap_step.complete
+							.step-icon
+								svg.svg-icon.cart-icon
+									use(xmlns:xlink="http://www.w3.org/1999/xlink",  xlink:href="#cart-icon")
+								svg.svg-icon.check-icon
+									use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#check-icon" )
+							.step-name
+								span 
+									| ВАША 
+									br
+									| КОРЗИНА
+							.step-lines
+								span
+								span
+								span
+						.cart-steps-wrap_step.active
+							.step-lines
+								span
+								span
+								span
+							.step-icon
+								svg.svg-icon.order-icon
+									use(xmlns:xlink="http://www.w3.org/1999/xlink",  xlink:href="#order-icon")
+								svg.svg-icon.check-icon
+									use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#check-icon" )
+							.step-name
+								span 
+									| ОФОРМЛЕНИЕ  
+									br
+									| ЗАКАЗА
+							.step-lines
+								span
+								span
+								span
+						.cart-steps-wrap_step
+							.step-lines
+								span
+								span
+								span
+							.step-icon
+								svg.svg-icon.like-icon
+									use(xmlns:xlink="http://www.w3.org/1999/xlink",  xlink:href="#like-icon")
+								svg.svg-icon.check-icon
+									use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#check-icon" )
+							.step-name
+								span 
+									| ПОКУПКА  
+									br
+									| СОВЕРШЕНА
+						a(href="#").back-to-shop
+							span.round-icon
+								svg.svg-icon.arrow-icon
+									use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#menu-arrow-icon" )
+							span.text Вернуться к покупкам
+
+				.cart-wrap
+					.container.clearfix
+						.cart-wrap_left-block
+							.order-login-block.clearfix
+								.login-wrap_login-side
+									.login-wrap_login-side_title
+										span ВОЙТИ НА САЙТ
+									form(action="#")
+										.m-input-wrap
+											.m-input-wrap_text
+												span E-mail или телефон *
+											input(type="text")
+										.m-input-wrap
+											.m-input-wrap_text
+												span Пароль *
+											input(type="password")
+										.buttons-wrap
+											.buttons-wrap_enter-btn
+												button.btn.blu-bd-btn.fw.light-blue ВОЙТИ
+											.buttons-wrap_renew-pass
+												a(href="#") Забыли пароль?
+								.login-wrap_reg-side
+									.login-wrap_reg-side_title
+										span КУПИТЬ БЕЗ РЕГИСТРАЦИИ
+									.login-wrap_reg-side_text
+										p Вы можете зарегистрироваться после оформления заказа и получать все преимущества:
+									ul 
+										li
+											svg.svg-icon.check-icon
+												use(xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="#check-icon")
+											span Индивидуальные скидки
+										li
+											svg.svg-icon.check-icon
+												use(xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="#check-icon")
+											span Доступ к спецпредложениям
+										li
+											svg.svg-icon.check-icon
+												use(xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="#check-icon")
+											span Отслеживание статуса выполнения заказа
+										li
+											svg.svg-icon.check-icon
+												use(xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="#check-icon")
+											span Информация о новинках и акциях
+									.login-wrap_reg-side_button
+										a(href="#").btn.blue-btn.fw ПРОДОЛЖИТЬ
+							.hidden
+								.cart-wrap_left-block_line.clearfix
+									.remove-icon-wrap
+										svg.svg-icon.busket-gray-icon
+											use(xmlns:xlink="http://www.w3.org/1999/xlink",  xlink:href="#busket-gray-icon")
+										svg.svg-icon.busket-blue-icon
+											use(xmlns:xlink="http://www.w3.org/1999/xlink",  xlink:href="#busket-blue-icon")
+									.img-wrap
+										a(href="#")
+											img(src="img/userfiles/item/item-big.jpg", alt="")
+									.text-wrap
+										.art
+											span Артикул: 123807
+										.text 
+											span Тепло и звукоизоляция Rockwool Флор Батс 25 мм в упаковке 4,8 кв.м
+									.price
+										span 1 230 
+											span.rouble й
+									.counter
+										.main-items-wrap_items-place_item_buttons-wrap
+											.count-btn-wrap
+												input(type="number", value="1", data-min-value="1")
+												span.plus
+												span.minus
+
+								.cart-wrap_left-block_line.clearfix
+									.remove-icon-wrap
+										svg.svg-icon.busket-gray-icon
+											use(xmlns:xlink="http://www.w3.org/1999/xlink",  xlink:href="#busket-gray-icon")
+										svg.svg-icon.busket-blue-icon
+											use(xmlns:xlink="http://www.w3.org/1999/xlink",  xlink:href="#busket-blue-icon")
+									.img-wrap
+										a(href="#")
+											img(src="img/userfiles/item/item-big.jpg", alt="")
+									.text-wrap
+										.art
+											span Артикул: 123807
+										.text 
+											span Тепло и звукоизоляция Rockwool Флор Батс 25 мм в упаковке 4,8 кв.м
+									.price
+										span 1 230 
+											span.rouble й
+									.counter
+										.main-items-wrap_items-place_item_buttons-wrap
+											.count-btn-wrap
+												input(type="number", value="1", data-min-value="1")
+												span.plus
+												span.minus
+
+								.cart-wrap_left-block_line.clearfix
+									.remove-icon-wrap
+										svg.svg-icon.busket-gray-icon
+											use(xmlns:xlink="http://www.w3.org/1999/xlink",  xlink:href="#busket-gray-icon")
+										svg.svg-icon.busket-blue-icon
+											use(xmlns:xlink="http://www.w3.org/1999/xlink",  xlink:href="#busket-blue-icon")
+									.img-wrap
+										a(href="#")
+											img(src="img/userfiles/item/item-big.jpg", alt="")
+									.text-wrap
+										.art
+											span Артикул: 123807
+										.text 
+											span Тепло и звукоизоляция Rockwool Флор Батс 25 мм в упаковке 4,8 кв.м
+									.price
+										span 1 230 
+											span.rouble й
+									.counter
+										.main-items-wrap_items-place_item_buttons-wrap
+											.count-btn-wrap
+												input(type="number", value="1", data-min-value="1")
+												span.plus
+												span.minus
+
+								.cart-wrap_left-block_line.clearfix
+									.remove-icon-wrap
+										svg.svg-icon.busket-gray-icon
+											use(xmlns:xlink="http://www.w3.org/1999/xlink",  xlink:href="#busket-gray-icon")
+										svg.svg-icon.busket-blue-icon
+											use(xmlns:xlink="http://www.w3.org/1999/xlink",  xlink:href="#busket-blue-icon")
+									.img-wrap
+										a(href="#")
+											img(src="img/userfiles/item/item-big.jpg", alt="")
+									.text-wrap
+										.art
+											span Артикул: 123807
+										.text 
+											span Тепло и звукоизоляция Rockwool Флор Батс 25 мм в упаковке 4,8 кв.м
+									.price
+										span 1 230 
+											span.rouble й
+									.counter
+										.main-items-wrap_items-place_item_buttons-wrap
+											.count-btn-wrap
+												input(type="number", value="1", data-min-value="1")
+												span.plus
+												span.minus
+
+								.cart-wrap_left-block_line.clearfix
+									.remove-icon-wrap
+										svg.svg-icon.busket-gray-icon
+											use(xmlns:xlink="http://www.w3.org/1999/xlink",  xlink:href="#busket-gray-icon")
+										svg.svg-icon.busket-blue-icon
+											use(xmlns:xlink="http://www.w3.org/1999/xlink",  xlink:href="#busket-blue-icon")
+									.img-wrap
+										a(href="#")
+											img(src="img/userfiles/item/item-big.jpg", alt="")
+									.text-wrap
+										.art
+											span Артикул: 123807
+										.text 
+											span Тепло и звукоизоляция Rockwool Флор Батс 25 мм в упаковке 4,8 кв.м
+									.price
+										span 1 230 
+											span.rouble й
+									.counter
+										.main-items-wrap_items-place_item_buttons-wrap
+											.count-btn-wrap
+												input(type="number", value="1", data-min-value="1")
+												span.plus
+												span.minus
+
+								.cart-wrap_left-block_line.clearfix
+									.remove-icon-wrap
+										svg.svg-icon.busket-gray-icon
+											use(xmlns:xlink="http://www.w3.org/1999/xlink",  xlink:href="#busket-gray-icon")
+										svg.svg-icon.busket-blue-icon
+											use(xmlns:xlink="http://www.w3.org/1999/xlink",  xlink:href="#busket-blue-icon")
+									.img-wrap
+										a(href="#")
+											img(src="img/userfiles/item/item-big.jpg", alt="")
+									.text-wrap
+										.art
+											span Артикул: 123807
+										.text 
+											span Тепло и звукоизоляция Rockwool Флор Батс 25 мм в упаковке 4,8 кв.м
+									.price
+										span 1 230 
+											span.rouble й
+									.counter
+										.main-items-wrap_items-place_item_buttons-wrap
+											.count-btn-wrap
+												input(type="number", value="1", data-min-value="1")
+												span.plus
+												span.minus
+							.order-line-wrap
+								.order-line-wrap_title.clearfix
+									.number
+										span 1
+									.text
+										span Ввод контактных данных
+									.change-btn
+										a(href="#") ИЗМЕНИТЬ
+								.order-line-wrap_body.reg
+									form(action="#").validate
+										.reg-wrap_type-chose
+											.m-radiobox
+												label
+													input(type="radio", name='reg-type', checked)
+													.m-radiobox_icon
+													.m-radiobox_text
+														span Частное лицо
+											.m-radiobox
+												label
+													input#secondBlockTriggerRadio(type="radio", name='reg-type')
+													.m-radiobox_icon
+													.m-radiobox_text
+														span Юридическое лицо
+										.reg-wrap_blocks-wrap.clearfix
+											.reg-wrap_blocks-wrap_left-block
+												.m-input-wrap
+													.m-input-wrap_text
+														span Имя *
+													input(type="text", name="name")#orderName
+												.m-input-wrap
+													.m-input-wrap_text
+														span Фамилия *
+													input(type="text", name="suraname")#orderSurname
+												.m-input-wrap
+													.m-input-wrap_text
+														span Телефон *
+													input(type="text", name="phone")#orderPhone
+												.m-input-wrap
+													.m-input-wrap_text
+														span E-mail *
+													input(type="text", name="mail")#orderMail
+													.info-link.left
+														.info-link_icon
+														.info-link_text
+															span Пароль должен содержать не менее 6 символов. Латинские буквы и/или цифры.
+											.reg-wrap_blocks-wrap_right-block#rightBlock
+												.m-input-wrap
+													.m-input-wrap_text
+														span Название организации *
+													input(type="text", name="name2").ignore-trigger.ignore
+												.m-input-wrap
+													.m-input-wrap_text
+														span ИНН *
+													input(type="text", name="inn").ignore-trigger.ignore
+												.m-input-wrap
+													.m-input-wrap_text
+														span КПП *
+													input(type="text", name="kpp").ignore-trigger.ignore
+												.m-input-wrap
+													.m-input-wrap_text
+														span Юридический адрес *
+													input(type="text", name="adress").ignore-trigger.ignore
+										.reg-wrap_checks-wrap
+											.m-checkbox
+												label
+													input(type="checkbox", name="rules")
+													.m-checkbox_icon
+														svg.svg-icon.check-icon
+															use(xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="#check-icon")
+													.m-checkbox_text
+														span Я согласен (-на) с правилами доставки м разделом “Покупателям” 
+											.m-checkbox
+												label
+													input(type="checkbox")
+													.m-checkbox_icon
+														svg.svg-icon.check-icon
+															use(xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="#check-icon")
+													.m-checkbox_text
+														span Получать рассылки с акциями и спецпредложениями на e-mail
+										.next-block-btn
+											button.btn.fw.blue-btn ДАЛЕЕ
+							.order-line-wrap
+								.order-line-wrap_title.clearfix
+									.number
+										span 2
+									.text
+										span Выбор способа доставки
+									.change-btn
+										a(href="#") ИЗМЕНИТЬ
+								.order-line-wrap_body.delivery
+									form(action="#").validate
+										.line
+											.m-radiobox
+												label
+													input(type="radio", name='d1')
+													.m-radiobox_icon
+													.line-title
+														span Самовывоз
+													.line-text
+														span г. Нижний Новгород, ул. Торфяная, 23
+										.line
+											.m-radiobox
+												label
+													input(type="radio", name='d1')
+													.m-radiobox_icon
+													.line-textarea
+														.title
+															span Адрес доставки *
+														.m-input-wrap
+															textarea(name="adress", data-min-leght="10")
+													.line-title
+														span Доставка по Нижнему Новгороду
+													.line-text
+														span 
+															| При заказе от 
+															b 5 000 р. 
+															| – доставка осуществляется бесплатно. Время доставки – с 8:00 до 22:00 в будние и выходные дни. Стоимость разгрузки и подъема расчитывается отдельно.
+										.line
+											.m-radiobox
+												label
+													input(type="radio", name='d1')
+													.m-radiobox_icon
+													.line-title
+														span Доставка по Нижегородской области
+													.line-text
+														span 
+															| Доставка а/м Газель (до 1500 кг) до 50 км. – 
+															b 700 р. 
+															| Время доставки – с 8:00 до 22:00 в будние и выходные дни. Стоимость разгрузки и подъема расчитывается отдельно.
+									.next-block-btn
+										button.btn.fw.blue-btn ДАЛЕЕ
+							.order-line-wrap
+								.order-line-wrap_title.clearfix
+									.number
+										span 3
+									.text
+										span Выбор способа оплаты
+									.change-btn
+										a(href="#") ИЗМЕНИТЬ
+								.order-line-wrap_body.pay
+									.line
+										.m-radiobox
+											label
+												input(type="radio", name='p1')
+												.m-radiobox_icon
+												.title
+													span Наличными курьеру
+												.text
+													span Оплата заказа наличными при получении
+									.line
+										.m-radiobox
+											label
+												input(type="radio", name='p1')
+												.m-radiobox_icon
+												.title
+													span Банковская карта
+													img(src="img/template/pay/visa.png", alt="")
+													img(src="img/template/pay/mc.png", alt="")
+												.text
+													span При оплате  на сайте банковской картой (VISA, MasterCard) – получите скидку 3%
+									.line
+										.m-radiobox
+											label
+												input(type="radio", name='p1')
+												.m-radiobox_icon
+												.title
+													span Платежный сервис QIWI
+													img(src="img/template/pay/qiwi.png", alt="")
+												.text
+													span Комиссия – 2,48%
+									.line
+										.m-radiobox
+											label
+												input(type="radio", name='p1')
+												.m-radiobox_icon
+												.title
+													span Платежная система WebMoney
+													img(src="img/template/pay/wm.png", alt="")
+												.text
+													span Комиссия – 2,48%
+									.line
+										.m-radiobox
+											label
+												input(type="radio", name='p1')
+												.m-radiobox_icon
+												.title
+													span Платежная система ЯндексДеньги
+													img(src="img/template/pay/ya.png", alt="")
+												.text
+													span Комиссия – 1%
+									.next-block-btn
+										button.btn.fw.blue-btn ДАЛЕЕ
+							.order-line-wrap
+								.order-line-wrap_title.clearfix
+									.number
+										span 4
+									.text
+										span Подтверждение данных
+									.change-btn
+										a(href="#") ИЗМЕНИТЬ
+								.order-line-wrap_body.info
+									.info-block
+										.info-block_title
+											span Ваш заказ
+											.change-btn
+												a(href="#") ИЗМЕНИТЬ
+										.items-wrap.first
+											.line.clearfix
+												.text
+													span Тепло и звукоизоляция Rockwool Флор Батс 25 мм в упаковке 4,8 кв.м
+												.price
+													span 1 230
+													span.rouble й
+												.numb
+													span 1
+											.line.clearfix
+												.text
+													span Тепло и звукоизоляция Rockwool Флор Батс 25 мм в упаковке 4,8 кв.м
+												.price
+													span 1 230
+													span.rouble й
+												.numb
+													span 1
+											.line.clearfix
+												.text
+													span Тепло и звукоизоляция Rockwool Флор Батс 25 мм в упаковке 4,8 кв.м
+												.price
+													span 1 230
+													span.rouble й
+												.numb
+													span 1
+											.line.clearfix
+												.text
+													span Тепло и звукоизоляция Rockwool Флор Батс 25 мм в упаковке 4,8 кв.м
+												.price
+													span 1 230
+													span.rouble й
+												.numb
+													span 1
+											.line.clearfix
+												.text
+													span Тепло и звукоизоляция Rockwool Флор Батс 25 мм в упаковке 4,8 кв.м
+												.price
+													span 1 230
+													span.rouble й
+												.numb
+													span 1
+											.line.clearfix
+												.text
+													span Тепло и звукоизоляция Rockwool Флор Батс 25 мм в упаковке 4,8 кв.м
+												.price
+													span 1 230
+													span.rouble й
+												.numb
+													span 1
+										.items-wrap
+											.line.clearfix
+												.text
+													span Доставка
+												.price#infoBlockdelivery
+													span 0
+													span.rouble й
+											.line.clearfix
+												.text
+													span Скидка
+												.price#infoBlockDiscount
+													span 575
+													span.rouble й
+										.ttl-line.clearfix
+											.text
+												span ИТОГО
+											.price#infoBlockTtlPrice
+												span 11 640
+												span.rouble й
+									.info-block
+										.info-block_title
+											span Информация о заказе
+											.change-btn
+												a(href="#") ИЗМЕНИТЬ
+										.line2.clearfix
+											.text1
+												span Получатель
+											.text2#infoBLockName
+												span Андреев Владимир Владимирович
+										.line2.clearfix
+											.text1
+												span Контатктный телефон
+											.text2#infoBLockphone
+												span +7 (910) 210-30-22
+										.line2.clearfix
+											.text1
+												span E-mail
+											.text2#infoBLockMail
+												span andreev@mail.ru
+										.line2.clearfix
+											.text1
+												span Адрес доставки
+											.text2#infoBLockAdress
+												span ул. Алексеевская, 31, кв. 56
+										.line2.clearfix
+											.text1
+												span Дата доставки
+											.text2#infoBLockDelDate
+												span 23.12.2015
+										.line2.clearfix
+											.text1
+												span Способ оплаты
+											.text2#infoBLockPayvar
+												span Банковская карта (VISA, MasterCard)
+									.next-block-btn
+										button.btn.fw.blue-btn ПОДТВЕРДИТЬ										
+							.order-line-wrap
+								.order-line-wrap_title.clearfix
+									.number
+										span 5
+									.text
+										span Оплата заказа
+									.change-btn
+										a(href="#") ИЗМЕНИТЬ
+								.order-line-wrap_body.cart-pay
+									form(action="#").validate
+										.cards-wrap
+											.card1
+												.visa-logo
+													img(src="img/template/pay/visa-lg.png", alt="")
+												.mc-logo
+													img(src="img/template/pay/mc-lg.png", alt="")
+												.card-number
+													.text
+														span Номер карты
+													.m-input-wrap
+														input(type="text", name="cartNumber").cart-mask
+												.card-date.clearfix
+													.mounth
+														.text
+															span Месяц
+														.select-wrap
+															select.selectpicker
+																option(value="01", selected) 01
+																option(value="02") 02
+																option(value="03") 03
+																option(value="04") 04
+																option(value="05") 05
+																option(value="06") 06
+																option(value="07") 07
+																option(value="08") 08
+																option(value="09") 09
+																option(value="10") 10
+																option(value="11") 11
+																option(value="12") 12
+													.year
+														.text
+															span Год
+														.select-wrap
+															select.selectpicker
+																option(value="2015", selected) 2015
+																option(value="2016") 2016
+																option(value="2017") 2017
+																option(value="2018") 2018
+																option(value="2019") 2019
+																option(value="2020") 2020
+																option(value="2021") 2021
+																option(value="2022") 2022
+																option(value="2023") 2023
+																option(value="2024") 2024
+																option(value="2025") 2025
+												.card-name
+													.text
+														span Имя Фамилия
+													.m-input-wrap
+														input(type="text", name="name")
+													.info-link.left
+														.info-link_icon
+														.info-link_text
+															span Скидка при он-лайн оплате на сайте банковской картой (VISA, MasterCard, Maestro) – 3% от стоимости заказа без учета доставки
+											.card2
+												.black-line
+												.cvc
+													.text
+														span CVC/CVV
+													.m-input-wrap
+														input(type="text", name="cvc").cvc-mask
+													.text2 
+														span Введите последние 3 цифры
+										.next-block-btn
+											button.btn.fw.blue-btn ОПЛАТИТЬ	
+
+						.cart-wrap_right-block.hidden-sm.hidden-xs
+							.cart-wrap_right-block_body
+								.cart-wrap_right-block_body_block
+									.line.clearfix
+										.text1
+											span Товаров
+										.text2
+											span#goodsCounter 
+												b 8
+									.line.clearfix
+										.text1
+											span Вес
+										.text2
+											span#goodsWeight 
+												b 20 
+												| кг
+									.line.clearfix
+										.text1
+											span На сумму
+										.text2
+											span#goodsTtlPrice
+												b 12 000 
+												span.rouble й
+								.cart-wrap_right-block_body_block
+									.line.clearfix
+										.text1
+											span Доставка
+											.info-link.left
+												.info-link_icon
+												.info-link_text
+													span При заказе от 5 000 р. доставка по Нижнему Новгороду бесплатная. Время доставки с 8:00 до 20:00 в будние дни. Стоимость разгрузки и подъема рассчитывается отдельно.
+										.text2
+											span#deliveryPrice
+												b 0 
+												span.rouble й
+								.cart-wrap_right-block_body_block
+									.line.clearfix
+										.text1
+											span 
+												| При оплате на сайте
+												br
+												| – скидка 3%
+											.info-link.left
+												.info-link_icon
+												.info-link_text
+													span Скидка при он-лайн оплате на сайте банковской картой (VISA, MasterCard, Maestro) – 3% от стоимости заказа без учета доставки
+										.text2
+											.m-checkbox
+												label
+													input(type="checkbox", checked)
+													.m-checkbox_icon
+														svg.svg-icon.check-icon
+															use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#check-icon" )
+								.cart-wrap_right-block_body_block
+									.line.clearfix
+										.text1
+											span Скидка	
+										.text2
+											span#goodsDiscount(data-discount='0.03')
+												b 575 
+												span.rouble й
+							.cart-wrap_right-block_footer.clearfix
+								.text1.pull-left
+									span ИТОГО
+								.text2.pull-right
+									span#ttlPrice2 000
+										span.rouble й
+							.cart-wrap_right-block_button
+								a(href="#").btn.blu-bd-btn.fw.light-blue 
+									svg.svg-icon.card2-icon
+										use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#card2-icon" )
+									span ИЗМЕНИТЬ ЗАКАЗ
+
+			include includes/_footer.jade
+
+		include includes/_modals.jade
+
+		include includes/js-links.jade

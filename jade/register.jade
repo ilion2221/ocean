@@ -1,0 +1,119 @@
+doctype
+html
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, height=device-height, initial-scale=1, user-scalable=no, maximum-scale=1.0')
+		title index
+		include includes/css-links.jade
+
+	body
+		include includes/svg.jade
+		.page-wrapp
+			.content-without-footer
+				include includes/_header.jade
+				.container
+					.row
+						.col-md-5
+							include includes/_main-nav-wrap_catalog.jade
+						.col-md-15
+							.main-breadcrumbs
+								ul
+									li
+										a(href="#") Главная
+									li
+										span Регистрация
+
+				.reg-wrap
+					.container
+						.reg-wrap_title
+							span РЕГИСТРАЦИЯ
+						.reg-wrap_type-chose
+							.m-radiobox
+								label
+									input(type="radio", name='reg-type', checked)
+									.m-radiobox_icon
+									.m-radiobox_text
+										span Частное лицо
+							.m-radiobox
+								label
+									input#secondBlockTriggerRadio(type="radio", name='reg-type')
+									.m-radiobox_icon
+									.m-radiobox_text
+										span Юридическое лицо
+						.reg-wrap_blocks-wrap.clearfix
+							.reg-wrap_blocks-wrap_left-block
+								.m-input-wrap
+									.m-input-wrap_text
+										span Имя *
+									input(type="text")
+								.m-input-wrap
+									.m-input-wrap_text
+										span Фамилия *
+									input(type="text")
+								.m-input-wrap
+									.m-input-wrap_text
+										span Телефон *
+									input(type="text")
+								.m-input-wrap
+									.m-input-wrap_text
+										span E-mail *
+									input(type="text")
+									.info-link.left
+										.info-link_icon
+										.info-link_text
+											span Укажите свою электронную почту
+							.reg-wrap_blocks-wrap_right-block#rightBlock
+								.m-input-wrap
+									.m-input-wrap_text
+										span Название организации *
+									input(type="text")
+								.m-input-wrap
+									.m-input-wrap_text
+										span ИНН *
+									input(type="text")
+								.m-input-wrap
+									.m-input-wrap_text
+										span КПП *
+									input(type="text")
+								.m-input-wrap
+									.m-input-wrap_text
+										span Юридический адрес *
+									input(type="text")
+						.reg-wrap_pass-wrap
+							.m-input-wrap
+								.m-input-wrap_text
+									span Придумайте пароль *
+								input(type="text")
+								.info-link.left
+									.info-link_icon
+									.info-link_text
+										span Пароль должен содержать не менее 6 символов. Латинские буквы и/или цифры.
+							.m-input-wrap
+								.m-input-wrap_text
+									span Повторите пароль *
+								input(type="text")
+						.reg-wrap_checks-wrap
+							.m-checkbox
+								label
+									input(type="checkbox")
+									.m-checkbox_icon
+										svg.svg-icon.check-icon
+											use(xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="#check-icon")
+									.m-checkbox_text
+										span Получать рассылки с акциями и спецпредложениями на e-mail
+						.reg-wrap_button-wrap
+							button.btn.blue-btn.fw ЗАРЕГИСТРИРОВАТЬСЯ
+
+
+
+
+
+
+
+
+			include includes/_footer.jade
+
+		include includes/_modals.jade
+
+		include includes/js-links.jade

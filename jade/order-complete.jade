@@ -1,0 +1,409 @@
+doctype
+html
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, height=device-height, initial-scale=1, user-scalable=no, maximum-scale=1.0')
+		title index
+		include includes/css-links.jade
+
+	body
+		include includes/svg.jade
+		.page-wrapp
+			.content-without-footer
+				include includes/_header.jade
+				.container
+					.row
+						.col-md-5
+							include includes/_main-nav-wrap_catalog.jade
+						.col-md-15
+							.main-breadcrumbs
+								ul
+									li
+										a(href="#") Главная
+									li
+										a(href="#") Корзина
+									li
+										span Оформление заказа
+
+				.cart-steps-wrap
+					.container.clearfix
+						.cart-steps-wrap_step.complete
+							.step-icon
+								svg.svg-icon.cart-icon
+									use(xmlns:xlink="http://www.w3.org/1999/xlink",  xlink:href="#cart-icon")
+								svg.svg-icon.check-icon
+									use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#check-icon" )
+							.step-name
+								span 
+									| ВАША 
+									br
+									| КОРЗИНА
+							.step-lines
+								span
+								span
+								span
+						.cart-steps-wrap_step.complete
+							.step-lines
+								span
+								span
+								span
+							.step-icon
+								svg.svg-icon.order-icon
+									use(xmlns:xlink="http://www.w3.org/1999/xlink",  xlink:href="#order-icon")
+								svg.svg-icon.check-icon
+									use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#check-icon" )
+							.step-name
+								span 
+									| ОФОРМЛЕНИЕ  
+									br
+									| ЗАКАЗА
+							.step-lines
+								span
+								span
+								span
+						.cart-steps-wrap_step.complete
+							.step-lines
+								span
+								span
+								span
+							.step-icon
+								svg.svg-icon.like-icon
+									use(xmlns:xlink="http://www.w3.org/1999/xlink",  xlink:href="#like-icon")
+								svg.svg-icon.check-icon
+									use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#check-icon" )
+							.step-name
+								span 
+									| ПОКУПКА  
+									br
+									| СОВЕРШЕНА
+				.cart-wrap
+					.container.clearfix
+						.cart-wrap_left-block
+							.hidden
+								.cart-wrap_left-block_line.clearfix
+									.remove-icon-wrap
+										svg.svg-icon.busket-gray-icon
+											use(xmlns:xlink="http://www.w3.org/1999/xlink",  xlink:href="#busket-gray-icon")
+										svg.svg-icon.busket-blue-icon
+											use(xmlns:xlink="http://www.w3.org/1999/xlink",  xlink:href="#busket-blue-icon")
+									.img-wrap
+										a(href="#")
+											img(src="img/userfiles/item/item-big.jpg", alt="")
+									.text-wrap
+										.art
+											span Артикул: 123807
+										.text 
+											span Тепло и звукоизоляция Rockwool Флор Батс 25 мм в упаковке 4,8 кв.м
+									.price
+										span 1 230 
+											span.rouble й
+									.counter
+										.main-items-wrap_items-place_item_buttons-wrap
+											.count-btn-wrap
+												input(type="number", value="1", data-min-value="1")
+												span.plus
+												span.minus
+
+								.cart-wrap_left-block_line.clearfix
+									.remove-icon-wrap
+										svg.svg-icon.busket-gray-icon
+											use(xmlns:xlink="http://www.w3.org/1999/xlink",  xlink:href="#busket-gray-icon")
+										svg.svg-icon.busket-blue-icon
+											use(xmlns:xlink="http://www.w3.org/1999/xlink",  xlink:href="#busket-blue-icon")
+									.img-wrap
+										a(href="#")
+											img(src="img/userfiles/item/item-big.jpg", alt="")
+									.text-wrap
+										.art
+											span Артикул: 123807
+										.text 
+											span Тепло и звукоизоляция Rockwool Флор Батс 25 мм в упаковке 4,8 кв.м
+									.price
+										span 1 230 
+											span.rouble й
+									.counter
+										.main-items-wrap_items-place_item_buttons-wrap
+											.count-btn-wrap
+												input(type="number", value="1", data-min-value="1")
+												span.plus
+												span.minus
+
+								.cart-wrap_left-block_line.clearfix
+									.remove-icon-wrap
+										svg.svg-icon.busket-gray-icon
+											use(xmlns:xlink="http://www.w3.org/1999/xlink",  xlink:href="#busket-gray-icon")
+										svg.svg-icon.busket-blue-icon
+											use(xmlns:xlink="http://www.w3.org/1999/xlink",  xlink:href="#busket-blue-icon")
+									.img-wrap
+										a(href="#")
+											img(src="img/userfiles/item/item-big.jpg", alt="")
+									.text-wrap
+										.art
+											span Артикул: 123807
+										.text 
+											span Тепло и звукоизоляция Rockwool Флор Батс 25 мм в упаковке 4,8 кв.м
+									.price
+										span 1 230 
+											span.rouble й
+									.counter
+										.main-items-wrap_items-place_item_buttons-wrap
+											.count-btn-wrap
+												input(type="number", value="1", data-min-value="1")
+												span.plus
+												span.minus
+
+								.cart-wrap_left-block_line.clearfix
+									.remove-icon-wrap
+										svg.svg-icon.busket-gray-icon
+											use(xmlns:xlink="http://www.w3.org/1999/xlink",  xlink:href="#busket-gray-icon")
+										svg.svg-icon.busket-blue-icon
+											use(xmlns:xlink="http://www.w3.org/1999/xlink",  xlink:href="#busket-blue-icon")
+									.img-wrap
+										a(href="#")
+											img(src="img/userfiles/item/item-big.jpg", alt="")
+									.text-wrap
+										.art
+											span Артикул: 123807
+										.text 
+											span Тепло и звукоизоляция Rockwool Флор Батс 25 мм в упаковке 4,8 кв.м
+									.price
+										span 1 230 
+											span.rouble й
+									.counter
+										.main-items-wrap_items-place_item_buttons-wrap
+											.count-btn-wrap
+												input(type="number", value="1", data-min-value="1")
+												span.plus
+												span.minus
+
+								.cart-wrap_left-block_line.clearfix
+									.remove-icon-wrap
+										svg.svg-icon.busket-gray-icon
+											use(xmlns:xlink="http://www.w3.org/1999/xlink",  xlink:href="#busket-gray-icon")
+										svg.svg-icon.busket-blue-icon
+											use(xmlns:xlink="http://www.w3.org/1999/xlink",  xlink:href="#busket-blue-icon")
+									.img-wrap
+										a(href="#")
+											img(src="img/userfiles/item/item-big.jpg", alt="")
+									.text-wrap
+										.art
+											span Артикул: 123807
+										.text 
+											span Тепло и звукоизоляция Rockwool Флор Батс 25 мм в упаковке 4,8 кв.м
+									.price
+										span 1 230 
+											span.rouble й
+									.counter
+										.main-items-wrap_items-place_item_buttons-wrap
+											.count-btn-wrap
+												input(type="number", value="1", data-min-value="1")
+												span.plus
+												span.minus
+
+								.cart-wrap_left-block_line.clearfix
+									.remove-icon-wrap
+										svg.svg-icon.busket-gray-icon
+											use(xmlns:xlink="http://www.w3.org/1999/xlink",  xlink:href="#busket-gray-icon")
+										svg.svg-icon.busket-blue-icon
+											use(xmlns:xlink="http://www.w3.org/1999/xlink",  xlink:href="#busket-blue-icon")
+									.img-wrap
+										a(href="#")
+											img(src="img/userfiles/item/item-big.jpg", alt="")
+									.text-wrap
+										.art
+											span Артикул: 123807
+										.text 
+											span Тепло и звукоизоляция Rockwool Флор Батс 25 мм в упаковке 4,8 кв.м
+									.price
+										span 1 230 
+											span.rouble й
+									.counter
+										.main-items-wrap_items-place_item_buttons-wrap
+											.count-btn-wrap
+												input(type="number", value="1", data-min-value="1")
+												span.plus
+												span.minus
+							.order-complete-wrap
+								.order-complete-wrap_title
+									span СПАСИБО ЗА ВАШ ЗАКАЗ!
+								.order-complete-wrap_mail-block.clearfix
+									.mail
+										span Письмо с подтверждением заказа отправлено на 
+											b andreev@mail.ru
+									.text
+										span Наш менеджер в ближайшее время свяжется с Вами для уточнения деталей заказа.
+								.order-complete-wrap_info-block
+									.order-complete-wrap_info-block_title
+										span Информация о заказе
+									.order-complete-wrap_info-block_about
+										.line.clearfix
+											.text1
+												span Номер заказа
+											.text2
+												span 23715
+										.line.clearfix
+											.text1
+												span Получатель
+											.text2
+												span Андреев Владимир Владимирович
+										.line.clearfix
+											.text1
+												span Контатктный телефон
+											.text2
+												span +7 (910) 210-30-22
+										.line.clearfix
+											.text1
+												span E-mail
+											.text2
+												span andreev@mail.ru
+										.line.clearfix
+											.text1
+												span Адрес доставки
+											.text2
+												span г. Нижний Новгород, ул. Алексеевская, 31, кв. 56
+										.line.clearfix
+											.text1
+												span Дата доставки
+											.text2
+												span 23.12.2015
+										.line.clearfix
+											.text1
+												span Способ оплаты
+											.text2
+												span Банковская карта (VISA, MasterCard)
+										.line.clearfix
+											.text1
+												span Статус 
+											.text2
+												span Оплачено
+								.order-complete-wrap_info-block
+									.order-complete-wrap_info-block_title
+										span Ваши покупки
+									.order-complete-wrap_info-block_goods
+										.line.clearfix
+											.name
+												span Тепло и звукоизоляция Rockwool Флор Батс 25 мм в упаковке 4,8 кв.м
+											.price
+												span 1 230
+													span.rouble й
+											.count
+												span 1
+										.line.clearfix
+											.name
+												span Тепло и звукоизоляция Rockwool Флор Батс 25 мм в упаковке 4,8 кв.м
+											.price
+												span 1 230
+													span.rouble й
+											.count
+												span 1
+										.line.clearfix
+											.name
+												span Тепло и звукоизоляция Rockwool Флор Батс 25 мм в упаковке 4,8 кв.м
+											.price
+												span 1 230
+													span.rouble й
+											.count
+												span 1
+										.line.clearfix
+											.name
+												span Тепло и звукоизоляция Rockwool Флор Батс 25 мм в упаковке 4,8 кв.м
+											.price
+												span 1 230
+													span.rouble й
+											.count
+												span 1
+										.line.clearfix
+											.name
+												span Тепло и звукоизоляция Rockwool Флор Батс 25 мм в упаковке 4,8 кв.м
+											.price
+												span 1 230
+													span.rouble й
+											.count
+												span 1
+										.line.clearfix
+											.name
+												span Тепло и звукоизоляция Rockwool Флор Батс 25 мм в упаковке 4,8 кв.м
+											.price
+												span 1 230
+													span.rouble й
+											.count
+												span 1
+
+						.cart-wrap_right-block.hidden-sm.hidden-xs
+							.cart-wrap_right-block_body
+								.cart-wrap_right-block_body_block
+									.line.clearfix
+										.text1
+											span Товаров
+										.text2
+											span#goodsCounter 
+												b 8
+									.line.clearfix
+										.text1
+											span Вес
+										.text2
+											span#goodsWeight 
+												b 20 
+												| кг
+									.line.clearfix
+										.text1
+											span На сумму
+										.text2
+											span#goodsTtlPrice
+												b 12 000 
+												span.rouble й
+								.cart-wrap_right-block_body_block
+									.line.clearfix
+										.text1
+											span Доставка
+										.text2
+											span#deliveryPrice
+												b 0 
+												span.rouble й
+
+								.cart-wrap_right-block_body_block
+									.line.clearfix
+										.text1
+											span Скидка	
+										.text2
+											span#goodsDiscount(data-discount='0.03')
+												b 575 
+												span.rouble й
+							.cart-wrap_right-block_footer.clearfix
+								.text1.pull-left
+									span ИТОГО
+								.text2.pull-right
+									span#ttlPrice2 000
+										span.rouble й
+
+							.login-wrap_reg-side
+								.login-wrap_reg-side_text
+									p Зарегистрируйтесь для получения преимуществ
+								ul 
+									li
+										svg.svg-icon.check-icon
+											use(xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="#check-icon")
+										span Индивидуальные скидки
+									li
+										svg.svg-icon.check-icon
+											use(xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="#check-icon")
+										span Доступ к спецпредложениям
+									li
+										svg.svg-icon.check-icon
+											use(xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="#check-icon")
+										span Отслеживание статуса заказа
+									li
+										svg.svg-icon.check-icon
+											use(xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="#check-icon")
+										span Информация о новинках и акциях
+								.login-wrap_reg-side_button
+									a(href="#").btn.blue-btn.fw РЕГИСТРАЦИЯ
+					.cart-wrap_cont-shoping
+						a(href="#").btn.fw.blu-bd-btn.light-blue ПРОДОЛЖИТЬ ПОКУПКИ 
+
+			include includes/_footer.jade
+
+		include includes/_modals.jade
+
+		include includes/js-links.jade

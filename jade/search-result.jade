@@ -1,0 +1,813 @@
+doctype
+html
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, height=device-height, initial-scale=1, user-scalable=no, maximum-scale=1.0')
+		title index
+		include includes/css-links.jade
+
+	body
+		include includes/svg.jade
+		.page-wrapp
+			.content-without-footer
+				include includes/_header-cart.jade
+				.container
+					.row
+						.col-md-5
+							include includes/_main-nav-wrap_catalog.jade
+						.col-md-15
+							.main-breadcrumbs
+								ul
+									li
+										a(href="#") Главная
+									li
+										span Результаты поиска
+
+				.catalog-wrap
+					.container
+						.row
+							.col-md-5
+								.catalog-nav
+									.catalog-nav_title.hidden-xs.hidden-sm
+										span СТРОИТЕЛЬНЫЕ МАТЕРИАЛЫ 
+										span.count (215)
+									.catalog-nav_title.visible-xs.visible-sm
+										span СТРОИТЕЛЬНЫЕ МАТЕРИАЛЫ 
+										span.count (215)
+										svg.svg-icon.arrow-icon
+											use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#menu-arrow-icon" )
+									.catalog-nav_body 
+										ul
+											li
+												a(href="#")
+													span ГИПСОКАРТОН 
+													span.count (35)
+											li
+												a(href="#")
+													span СУХИЕ СМЕСИ 
+													span.count (35)
+											li
+												a(href="#")
+													span ЛЕСОПИЛОМАТЕРИАЛЫ 
+													span.count (35)
+											li
+												a(href="#")
+													span КРОВЛЯ, САЙДИНГ 
+													span.count (35)
+											li
+												a(href="#")
+													span ТЕПЛОИЗОЛЯЦИЯ 
+													span.count (35)
+											li
+												a(href="#")
+													span ГИДРОИЗОЛЯЦИЯ  
+													span.count (35)
+											li
+												a(href="#")
+													span ОГРАЖДЕНИЯ  
+													span.count (35)
+											li
+												a(href="#")
+													span МЕТАЛЛОПРОКАТ   
+													span.count (35)
+											li
+												a(href="#")
+													span АСБОЦЕМЕНТНЫЕ ИЗДЕЛИЯ  
+													span.count (35)
+											li
+												a(href="#")
+													span ПЛИТКА  
+													span.count (35)
+											li.selected
+												a(href="#")
+													span АКЦИОННЫЕ ТОВАРЫ 
+													span.count (35)
+								.catalog-filter
+									.catalog-filter_title.visible-xs.visible-sm
+										span ФИЛЬТР 
+										span.count (215)
+										svg.svg-icon.arrow-icon
+											use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#menu-arrow-icon" )
+									.catalog-filter_body
+										.catalog-filter-block.active
+											.catalog-filter-block_title
+												span ЦЕНА
+												svg.svg-icon.arrow-icon
+													use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#menu-arrow-icon" )
+											.catalog-filter-block_body
+												.catalog-filter-block_price_from-to.clearfix
+													.from
+														span 100
+													.to
+														span 20 000
+												.catalog-filter-block_price_range
+													#priceRangeSlider
+												.catalog-filter-block_price_inputs
+													.from
+														input(type="text")
+													.to
+														input(type="text")
+													span.rouble й
+										.catalog-filter-block.active
+											.catalog-filter-block_title
+												span ПРОИЗВОДИТЕЛЬ
+												svg.svg-icon.arrow-icon
+													use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#menu-arrow-icon" )
+											.catalog-filter-block_body
+												.catalog-filter-block_brand
+														.catalog-filter-block_brand_item
+															.m-checkbox
+																label
+																	input(type="checkbox")
+																	.m-checkbox_icon
+																		svg.svg-icon.check-icon
+																			use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#check-icon" )
+																	.m-checkbox_text
+																		span Tarkett
+														.catalog-filter-block_brand_item
+															.m-checkbox
+																label
+																	input(type="checkbox")
+																	.m-checkbox_icon
+																		svg.svg-icon.check-icon
+																			use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#check-icon" )
+																	.m-checkbox_text
+																		span Tarkett
+														.catalog-filter-block_brand_item
+															.m-checkbox
+																label
+																	input(type="checkbox")
+																	.m-checkbox_icon
+																		svg.svg-icon.check-icon
+																			use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#check-icon" )
+																	.m-checkbox_text
+																		span Tarkett
+														.catalog-filter-block_brand_item
+															.m-checkbox
+																label
+																	input(type="checkbox")
+																	.m-checkbox_icon
+																		svg.svg-icon.check-icon
+																			use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#check-icon" )
+																	.m-checkbox_text
+																		span Tarkett
+														.catalog-filter-block_brand_item
+															.m-checkbox
+																label
+																	input(type="checkbox")
+																	.m-checkbox_icon
+																		svg.svg-icon.check-icon
+																			use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#check-icon" )
+																	.m-checkbox_text
+																		span Tarkett
+														.catalog-filter-block_brand_item
+															.m-checkbox
+																label
+																	input(type="checkbox")
+																	.m-checkbox_icon
+																		svg.svg-icon.check-icon
+																			use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#check-icon" )
+																	.m-checkbox_text
+																		span Tarkett
+														.catalog-filter-block_brand_item
+															.m-checkbox
+																label
+																	input(type="checkbox")
+																	.m-checkbox_icon
+																		svg.svg-icon.check-icon
+																			use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#check-icon" )
+																	.m-checkbox_text
+																		span Tarkett
+														.catalog-filter-block_brand_item
+															.m-checkbox
+																label
+																	input(type="checkbox")
+																	.m-checkbox_icon
+																		svg.svg-icon.check-icon
+																			use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#check-icon" )
+																	.m-checkbox_text
+																		span Tarkett
+														.catalog-filter-block_brand_item
+															.m-checkbox
+																label
+																	input(type="checkbox")
+																	.m-checkbox_icon
+																		svg.svg-icon.check-icon
+																			use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#check-icon" )
+																	.m-checkbox_text
+																		span Tarkett
+														.catalog-filter-block_brand_item
+															.m-checkbox
+																label
+																	input(type="checkbox")
+																	.m-checkbox_icon
+																		svg.svg-icon.check-icon
+																			use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#check-icon" )
+																	.m-checkbox_text
+																		span Tarkett
+														.catalog-filter-block_brand_item
+															.m-checkbox
+																label
+																	input(type="checkbox")
+																	.m-checkbox_icon
+																		svg.svg-icon.check-icon
+																			use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#check-icon" )
+																	.m-checkbox_text
+																		span Tarkett
+										.catalog-filter-buttons
+											.catalog-filter-buttons_show.unactive
+												button.btn.blu-bd-btn.fw.light-blue ПОКАЗАТЬ
+											.catalog-filter-buttons_reset
+												button.btn.smpl-text СБРОСИТЬ
+
+							.col-md-15
+								.catalog-title-line.clearfix
+									.catalog-title-line_title
+										span ПО ВАШЕМУ ЗАПРОСУ НАЙДЕНО 
+											b (56)
+									.catalog-title-line_view-style.hidden-xs
+										.flat-style.active
+											span.line.clearfix
+												span
+												span
+												span
+											span.line.clearfix
+												span
+												span
+												span
+											span.line.clearfix
+												span
+												span
+												span
+										.line-style
+											span.line.clearfix
+												span
+												span
+											span.line.clearfix
+												span
+												span
+											span.line.clearfix
+												span
+												span
+									.catalog-title-line_sort
+										.text
+											span Сортировать по
+										.select-wrap
+											svg.svg-icon.arrow-icon
+												use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#menu-arrow-icon" )
+											select.selectpicker
+												option Увеличению цены
+												option Снижению цены
+												option Популярности
+												option Дате добавления
+								.catalog-items-wrap
+									.row
+										.col-lg-5
+											.main-items-wrap_items-place_item.clearfix
+												.main-items-wrap_items-place_item_img-wrap
+													.inner-wrap
+														a(href="#")
+															img(src="img/userfiles/home/item.jpg", alt="")
+												.line-style-desc-block
+													.main-items-wrap_items-place_item_name-wrap
+														span 
+															|Краска Tikkurila 
+															br
+															|EURO2 / 9 л
+													.line-style-desc-block_desc.hidden
+														p Легкие гидрофобизированные теплоизоляционные плиты изготовлены из каменной ваты на основе базальтовых пород.
+														p В упаковке 8 штук, площадь 5.76 кв. м
+															br
+															|Объем 0,288 куб. м
+												.line-style-price-block
+													.main-items-wrap_items-place_item_art-text.hidden
+														span Арт: 125970
+													.main-items-wrap_items-place_item_price-wrap
+														.old-price
+															span 3 500
+														.cur-price
+															span 2 290
+															span.rouble й
+													.main-items-wrap_items-place_item_buttons-wrap
+														.count-btn-wrap
+															input(type="number", value="1", data-min-value="1")
+															span.plus
+															span.minus
+														.to-cart-btn-wrap
+															button.btn.blue-btn.fw В КОРЗИНУ
+										.col-lg-5
+											.main-items-wrap_items-place_item.unactive.clearfix
+												.main-items-wrap_items-place_item_img-wrap
+													.inner-wrap
+														a(href="#")
+															img(src="img/userfiles/home/item.jpg", alt="")
+												.line-style-desc-block
+													.main-items-wrap_items-place_item_name-wrap
+														span 
+															|Краска Tikkurila 
+															br
+															|EURO2 / 9 л
+													.line-style-desc-block_desc.hidden
+														p Легкие гидрофобизированные теплоизоляционные плиты изготовлены из каменной ваты на основе базальтовых пород.
+														p В упаковке 8 штук, площадь 5.76 кв. м
+															br
+															|Объем 0,288 куб. м
+												.line-style-price-block
+													.main-items-wrap_items-place_item_art-text.hidden
+														span Арт: 125970
+													.main-items-wrap_items-place_item_price-wrap
+														.old-price
+															span 3 500
+														.cur-price
+															span 2 290
+															span.rouble й
+													.main-items-wrap_items-place_item_buttons-wrap
+														.count-btn-wrap
+															input(type="number", value="1", data-min-value="1")
+															span.plus
+															span.minus
+														.to-cart-btn-wrap
+															button.btn.blue-btn.fw В КОРЗИНУ
+										.col-lg-5
+											.main-items-wrap_items-place_item.clearfix
+												.main-items-wrap_items-place_item_img-wrap
+													.inner-wrap
+														a(href="#")
+															img(src="img/userfiles/home/item.jpg", alt="")
+												.line-style-desc-block
+													.main-items-wrap_items-place_item_name-wrap
+														span 
+															|Краска Tikkurila 
+															br
+															|EURO2 / 9 л
+													.line-style-desc-block_desc.hidden
+														p Легкие гидрофобизированные теплоизоляционные плиты изготовлены из каменной ваты на основе базальтовых пород.
+														p В упаковке 8 штук, площадь 5.76 кв. м
+															br
+															|Объем 0,288 куб. м
+												.line-style-price-block
+													.main-items-wrap_items-place_item_art-text.hidden
+														span Арт: 125970
+													.main-items-wrap_items-place_item_price-wrap
+														.cur-price
+															span 2 290
+															span.rouble й
+													.main-items-wrap_items-place_item_buttons-wrap
+														.count-btn-wrap
+															input(type="number", value="1", data-min-value="1")
+															span.plus
+															span.minus
+														.to-cart-btn-wrap
+															button.btn.blue-btn.fw В КОРЗИНУ
+										.col-lg-5
+											.main-items-wrap_items-place_item.clearfix
+												.main-items-wrap_items-place_item_img-wrap
+													.inner-wrap
+														a(href="#")
+															img(src="img/userfiles/home/item.jpg", alt="")
+															.flag-discount
+																svg.svg-icon.item-flag-icon
+																		use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#item-flag-icon" )
+																span.text -10%
+												.line-style-desc-block
+													.main-items-wrap_items-place_item_name-wrap
+														span 
+															|Краска Tikkurila 
+															br
+															|EURO2 / 9 л
+													.line-style-desc-block_desc.hidden
+														p Легкие гидрофобизированные теплоизоляционные плиты изготовлены из каменной ваты на основе базальтовых пород.
+														p В упаковке 8 штук, площадь 5.76 кв. м
+															br
+															|Объем 0,288 куб. м
+												.line-style-price-block
+													.main-items-wrap_items-place_item_art-text.hidden
+														span Арт: 125970
+													.main-items-wrap_items-place_item_price-wrap
+														.old-price
+															span 3 500
+														.cur-price
+															span 2 290
+															span.rouble й
+													.main-items-wrap_items-place_item_buttons-wrap
+														.count-btn-wrap
+															input(type="number", value="1", data-min-value="1")
+															span.plus
+															span.minus
+														.to-cart-btn-wrap
+															button.btn.blue-btn.fw В КОРЗИНУ
+										.col-lg-5
+											.main-items-wrap_items-place_item.clearfix
+												.main-items-wrap_items-place_item_img-wrap
+													.inner-wrap
+														a(href="#")
+															img(src="img/userfiles/home/item.jpg", alt="")
+												.line-style-desc-block
+													.main-items-wrap_items-place_item_name-wrap
+														span 
+															|Краска Tikkurila 
+															br
+															|EURO2 / 9 л
+													.line-style-desc-block_desc.hidden
+														p Легкие гидрофобизированные теплоизоляционные плиты изготовлены из каменной ваты на основе базальтовых пород.
+														p В упаковке 8 штук, площадь 5.76 кв. м
+															br
+															|Объем 0,288 куб. м
+												.line-style-price-block
+													.main-items-wrap_items-place_item_art-text.hidden
+														span Арт: 125970
+													.main-items-wrap_items-place_item_price-wrap
+														.old-price
+															span 3 500
+														.cur-price
+															span 2 290
+															span.rouble й
+													.main-items-wrap_items-place_item_buttons-wrap
+														.count-btn-wrap
+															input(type="number", value="1", data-min-value="1")
+															span.plus
+															span.minus
+														.to-cart-btn-wrap
+															button.btn.blue-btn.fw В КОРЗИНУ
+										.col-lg-5
+											.main-items-wrap_items-place_item.clearfix
+												.main-items-wrap_items-place_item_img-wrap
+													.inner-wrap
+														a(href="#")
+															img(src="img/userfiles/home/item.jpg", alt="")
+												.line-style-desc-block
+													.main-items-wrap_items-place_item_name-wrap
+														span 
+															|Краска Tikkurila 
+															br
+															|EURO2 / 9 л
+													.line-style-desc-block_desc.hidden
+														p Легкие гидрофобизированные теплоизоляционные плиты изготовлены из каменной ваты на основе базальтовых пород.
+														p В упаковке 8 штук, площадь 5.76 кв. м
+															br
+															|Объем 0,288 куб. м
+												.line-style-price-block
+													.main-items-wrap_items-place_item_art-text.hidden
+														span Арт: 125970
+													.main-items-wrap_items-place_item_price-wrap
+														.old-price
+															span 3 500
+														.cur-price
+															span 2 290
+															span.rouble й
+													.main-items-wrap_items-place_item_buttons-wrap
+														.count-btn-wrap
+															input(type="number", value="1", data-min-value="1")
+															span.plus
+															span.minus
+														.to-cart-btn-wrap
+															button.btn.blue-btn.fw В КОРЗИНУ
+										.col-lg-5
+											.main-items-wrap_items-place_item.clearfix
+												.main-items-wrap_items-place_item_img-wrap
+													.inner-wrap
+														a(href="#")
+															img(src="img/userfiles/home/item.jpg", alt="")
+												.line-style-desc-block
+													.main-items-wrap_items-place_item_name-wrap
+														span 
+															|Краска Tikkurila 
+															br
+															|EURO2 / 9 л
+													.line-style-desc-block_desc.hidden
+														p Легкие гидрофобизированные теплоизоляционные плиты изготовлены из каменной ваты на основе базальтовых пород.
+														p В упаковке 8 штук, площадь 5.76 кв. м
+															br
+															|Объем 0,288 куб. м
+												.line-style-price-block
+													.main-items-wrap_items-place_item_art-text.hidden
+														span Арт: 125970
+													.main-items-wrap_items-place_item_price-wrap
+														.old-price
+															span 3 500
+														.cur-price
+															span 2 290
+															span.rouble й
+													.main-items-wrap_items-place_item_buttons-wrap
+														.count-btn-wrap
+															input(type="number", value="1", data-min-value="1")
+															span.plus
+															span.minus
+														.to-cart-btn-wrap
+															button.btn.blue-btn.fw В КОРЗИНУ
+										.col-lg-5
+											.main-items-wrap_items-place_item.clearfix
+												.main-items-wrap_items-place_item_img-wrap
+													.inner-wrap
+														a(href="#")
+															img(src="img/userfiles/home/item.jpg", alt="")
+												.line-style-desc-block
+													.main-items-wrap_items-place_item_name-wrap
+														span 
+															|Краска Tikkurila 
+															br
+															|EURO2 / 9 л
+													.line-style-desc-block_desc.hidden
+														p Легкие гидрофобизированные теплоизоляционные плиты изготовлены из каменной ваты на основе базальтовых пород.
+														p В упаковке 8 штук, площадь 5.76 кв. м
+															br
+															|Объем 0,288 куб. м
+												.line-style-price-block
+													.main-items-wrap_items-place_item_art-text.hidden
+														span Арт: 125970
+													.main-items-wrap_items-place_item_price-wrap
+														.old-price
+															span 3 500
+														.cur-price
+															span 2 290
+															span.rouble й
+													.main-items-wrap_items-place_item_buttons-wrap
+														.count-btn-wrap
+															input(type="number", value="1", data-min-value="1")
+															span.plus
+															span.minus
+														.to-cart-btn-wrap
+															button.btn.blue-btn.fw В КОРЗИНУ
+										.col-lg-5
+											.main-items-wrap_items-place_item.clearfix
+												.main-items-wrap_items-place_item_img-wrap
+													.inner-wrap
+														a(href="#")
+															img(src="img/userfiles/home/item.jpg", alt="")
+												.line-style-desc-block
+													.main-items-wrap_items-place_item_name-wrap
+														span 
+															|Краска Tikkurila 
+															br
+															|EURO2 / 9 л
+													.line-style-desc-block_desc.hidden
+														p Легкие гидрофобизированные теплоизоляционные плиты изготовлены из каменной ваты на основе базальтовых пород.
+														p В упаковке 8 штук, площадь 5.76 кв. м
+															br
+															|Объем 0,288 куб. м
+												.line-style-price-block
+													.main-items-wrap_items-place_item_art-text.hidden
+														span Арт: 125970
+													.main-items-wrap_items-place_item_price-wrap
+														.old-price
+															span 3 500
+														.cur-price
+															span 2 290
+															span.rouble й
+													.main-items-wrap_items-place_item_buttons-wrap
+														.count-btn-wrap
+															input(type="number", value="1", data-min-value="1")
+															span.plus
+															span.minus
+														.to-cart-btn-wrap
+															button.btn.blue-btn.fw В КОРЗИНУ
+										.col-lg-5
+											.main-items-wrap_items-place_item.clearfix
+												.main-items-wrap_items-place_item_img-wrap
+													.inner-wrap
+														a(href="#")
+															img(src="img/userfiles/home/item.jpg", alt="")
+												.line-style-desc-block
+													.main-items-wrap_items-place_item_name-wrap
+														span 
+															|Краска Tikkurila 
+															br
+															|EURO2 / 9 л
+													.line-style-desc-block_desc.hidden
+														p Легкие гидрофобизированные теплоизоляционные плиты изготовлены из каменной ваты на основе базальтовых пород.
+														p В упаковке 8 штук, площадь 5.76 кв. м
+															br
+															|Объем 0,288 куб. м
+												.line-style-price-block
+													.main-items-wrap_items-place_item_art-text.hidden
+														span Арт: 125970
+													.main-items-wrap_items-place_item_price-wrap
+														.old-price
+															span 3 500
+														.cur-price
+															span 2 290
+															span.rouble й
+													.main-items-wrap_items-place_item_buttons-wrap
+														.count-btn-wrap
+															input(type="number", value="1", data-min-value="1")
+															span.plus
+															span.minus
+														.to-cart-btn-wrap
+															button.btn.blue-btn.fw В КОРЗИНУ
+										.col-lg-5
+											.main-items-wrap_items-place_item.clearfix
+												.main-items-wrap_items-place_item_img-wrap
+													.inner-wrap
+														a(href="#")
+															img(src="img/userfiles/home/item.jpg", alt="")
+												.line-style-desc-block
+													.main-items-wrap_items-place_item_name-wrap
+														span 
+															|Краска Tikkurila 
+															br
+															|EURO2 / 9 л
+													.line-style-desc-block_desc.hidden
+														p Легкие гидрофобизированные теплоизоляционные плиты изготовлены из каменной ваты на основе базальтовых пород.
+														p В упаковке 8 штук, площадь 5.76 кв. м
+															br
+															|Объем 0,288 куб. м
+												.line-style-price-block
+													.main-items-wrap_items-place_item_art-text.hidden
+														span Арт: 125970
+													.main-items-wrap_items-place_item_price-wrap
+														.old-price
+															span 3 500
+														.cur-price
+															span 2 290
+															span.rouble й
+													.main-items-wrap_items-place_item_buttons-wrap
+														.count-btn-wrap
+															input(type="number", value="1", data-min-value="1")
+															span.plus
+															span.minus
+														.to-cart-btn-wrap
+															button.btn.blue-btn.fw В КОРЗИНУ
+										.col-lg-5
+											.main-items-wrap_items-place_item.clearfix
+												.main-items-wrap_items-place_item_img-wrap
+													.inner-wrap
+														a(href="#")
+															img(src="img/userfiles/home/item.jpg", alt="")
+												.line-style-desc-block
+													.main-items-wrap_items-place_item_name-wrap
+														span 
+															|Краска Tikkurila 
+															br
+															|EURO2 / 9 л
+													.line-style-desc-block_desc.hidden
+														p Легкие гидрофобизированные теплоизоляционные плиты изготовлены из каменной ваты на основе базальтовых пород.
+														p В упаковке 8 штук, площадь 5.76 кв. м
+															br
+															|Объем 0,288 куб. м
+												.line-style-price-block
+													.main-items-wrap_items-place_item_art-text.hidden
+														span Арт: 125970
+													.main-items-wrap_items-place_item_price-wrap
+														.old-price
+															span 3 500
+														.cur-price
+															span 2 290
+															span.rouble й
+													.main-items-wrap_items-place_item_buttons-wrap
+														.count-btn-wrap
+															input(type="number", value="1", data-min-value="1")
+															span.plus
+															span.minus
+														.to-cart-btn-wrap
+															button.btn.blue-btn.fw В КОРЗИНУ
+										.col-lg-5
+											.main-items-wrap_items-place_item.clearfix
+												.main-items-wrap_items-place_item_img-wrap
+													.inner-wrap
+														a(href="#")
+															img(src="img/userfiles/home/item.jpg", alt="")
+												.line-style-desc-block
+													.main-items-wrap_items-place_item_name-wrap
+														span 
+															|Краска Tikkurila 
+															br
+															|EURO2 / 9 л
+													.line-style-desc-block_desc.hidden
+														p Легкие гидрофобизированные теплоизоляционные плиты изготовлены из каменной ваты на основе базальтовых пород.
+														p В упаковке 8 штук, площадь 5.76 кв. м
+															br
+															|Объем 0,288 куб. м
+												.line-style-price-block
+													.main-items-wrap_items-place_item_art-text.hidden
+														span Арт: 125970
+													.main-items-wrap_items-place_item_price-wrap
+														.old-price
+															span 3 500
+														.cur-price
+															span 2 290
+															span.rouble й
+													.main-items-wrap_items-place_item_buttons-wrap
+														.count-btn-wrap
+															input(type="number", value="1", data-min-value="1")
+															span.plus
+															span.minus
+														.to-cart-btn-wrap
+															button.btn.blue-btn.fw В КОРЗИНУ
+										.col-lg-5
+											.main-items-wrap_items-place_item.clearfix
+												.main-items-wrap_items-place_item_img-wrap
+													.inner-wrap
+														a(href="#")
+															img(src="img/userfiles/home/item.jpg", alt="")
+												.line-style-desc-block
+													.main-items-wrap_items-place_item_name-wrap
+														span 
+															|Краска Tikkurila 
+															br
+															|EURO2 / 9 л
+													.line-style-desc-block_desc.hidden
+														p Легкие гидрофобизированные теплоизоляционные плиты изготовлены из каменной ваты на основе базальтовых пород.
+														p В упаковке 8 штук, площадь 5.76 кв. м
+															br
+															|Объем 0,288 куб. м
+												.line-style-price-block
+													.main-items-wrap_items-place_item_art-text.hidden
+														span Арт: 125970
+													.main-items-wrap_items-place_item_price-wrap
+														.old-price
+															span 3 500
+														.cur-price
+															span 2 290
+															span.rouble й
+													.main-items-wrap_items-place_item_buttons-wrap
+														.count-btn-wrap
+															input(type="number", value="1", data-min-value="1")
+															span.plus
+															span.minus
+														.to-cart-btn-wrap
+															button.btn.blue-btn.fw В КОРЗИНУ
+										.col-lg-5
+											.main-items-wrap_items-place_item.clearfix
+												.main-items-wrap_items-place_item_img-wrap
+													.inner-wrap
+														a(href="#")
+															img(src="img/userfiles/home/item.jpg", alt="")
+												.line-style-desc-block
+													.main-items-wrap_items-place_item_name-wrap
+														span 
+															|Краска Tikkurila 
+															br
+															|EURO2 / 9 л
+													.line-style-desc-block_desc.hidden
+														p Легкие гидрофобизированные теплоизоляционные плиты изготовлены из каменной ваты на основе базальтовых пород.
+														p В упаковке 8 штук, площадь 5.76 кв. м
+															br
+															|Объем 0,288 куб. м
+												.line-style-price-block
+													.main-items-wrap_items-place_item_art-text.hidden
+														span Арт: 125970
+													.main-items-wrap_items-place_item_price-wrap
+														.old-price
+															span 3 500
+														.cur-price
+															span 2 290
+															span.rouble й
+													.main-items-wrap_items-place_item_buttons-wrap
+														.count-btn-wrap
+															input(type="number", value="1", data-min-value="1")
+															span.plus
+															span.minus
+														.to-cart-btn-wrap
+															button.btn.blue-btn.fw В КОРЗИНУ
+										.col-lg-5
+											.main-items-wrap_items-place_item.clearfix
+												.main-items-wrap_items-place_item_img-wrap
+													.inner-wrap
+														a(href="#")
+															img(src="img/userfiles/home/item.jpg", alt="")
+												.line-style-desc-block
+													.main-items-wrap_items-place_item_name-wrap
+														span 
+															|Краска Tikkurila 
+															br
+															|EURO2 / 9 л
+													.line-style-desc-block_desc.hidden
+														p Легкие гидрофобизированные теплоизоляционные плиты изготовлены из каменной ваты на основе базальтовых пород.
+														p В упаковке 8 штук, площадь 5.76 кв. м
+															br
+															|Объем 0,288 куб. м
+												.line-style-price-block
+													.main-items-wrap_items-place_item_art-text.hidden
+														span Арт: 125970
+													.main-items-wrap_items-place_item_price-wrap
+														.old-price
+															span 3 500
+														.cur-price
+															span 2 290
+															span.rouble й
+													.main-items-wrap_items-place_item_buttons-wrap
+														.count-btn-wrap
+															input(type="number", value="1", data-min-value="1")
+															span.plus
+															span.minus
+														.to-cart-btn-wrap
+															button.btn.blue-btn.fw В КОРЗИНУ
+								.catalog-load-more
+									.main-items-wrap_items-place_more-items-wrap
+										button.btn.blu-bd-btn.fw 
+											span ПОКАЗАТЬ ЕЩЁ
+											svg.svg-icon.arrow-icon
+												use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#menu-arrow-icon" )
+
+
+
+
+
+
+
+			include includes/_footer.jade
+
+		include includes/_modals.jade
+
+		include includes/js-links.jade

@@ -1,0 +1,727 @@
+doctype
+html
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, height=device-height, initial-scale=1, user-scalable=no, maximum-scale=1.0')
+		title index
+		include includes/css-links.jade
+
+	body
+		include includes/svg.jade
+		.page-wrapp
+			.content-without-footer
+				include includes/_header.jade
+				.container
+					.row
+						.col-md-5
+							include includes/_main-nav-wrap.jade
+						.col-md-15
+							.home-slider-wrap
+								.item
+									a(href="#")
+										img(src="img/userfiles/slider-img.jpg", alt="")
+										.text
+											span
+												| КРАСОЧНЫЙ ДЕКАБРЬ – 
+												br 
+												b СКИДКА 20% 
+												br
+												| НА ЛАКОКРАСОЧНЫЕ 
+												br
+												| МАТЕРИАЛЫ
+								.item
+									a(href="#")
+										img(src="img/userfiles/slider-img.jpg", alt="")
+										.text
+											span
+												| КРАСОЧНЫЙ ДЕКАБРЬ – 
+												br 
+												b СКИДКА 20% 
+												br
+												| НА ЛАКОКРАСОЧНЫЕ 
+												br
+												| МАТЕРИАЛЫ
+								.item
+									a(href="#")
+										img(src="img/userfiles/slider-img.jpg", alt="")
+										.text
+											span
+												| КРАСОЧНЫЙ ДЕКАБРЬ – 
+												br 
+												b СКИДКА 20% 
+												br
+												| НА ЛАКОКРАСОЧНЫЕ 
+												br
+												| МАТЕРИАЛЫ
+								.item
+									a(href="#")
+										img(src="img/userfiles/slider-img.jpg", alt="")
+										.text
+											span
+												| КРАСОЧНЫЙ ДЕКАБРЬ – 
+												br 
+												b СКИДКА 20% 
+												br
+												| НА ЛАКОКРАСОЧНЫЕ 
+												br
+												| МАТЕРИАЛЫ
+							.home-adv-blocks-wrap
+								.home-adv-blocks-wrap_row.clearfix
+									.home-adv-blocks-wrap_col
+										.home-adv-blocks-wrap_it
+											.home-adv-blocks-wrap_it_bg(style="background-image: url(img/userfiles/adv1.jpg)")
+											.home-adv-blocks-wrap_it-text
+												span ВСЕГДА САМЫЕ НИЗКИЕ ЦЕНЫ
+									.home-adv-blocks-wrap_col
+										.home-adv-blocks-wrap_it
+											.home-adv-blocks-wrap_it_bg(style="background-image: url(img/userfiles/adv2.jpg)")
+											.home-adv-blocks-wrap_it-text
+												span БЕСПЛАТНАЯ ДОСТАВКА
+									.home-adv-blocks-wrap_col
+										.home-adv-blocks-wrap_it
+											.home-adv-blocks-wrap_it_bg(style="background-image: url(img/userfiles/adv3.jpg)")
+											.home-adv-blocks-wrap_it-text
+												span ГАРАНТИЯ ВЫСОКОГО КАЧЕСТВА ТОВАРА
+				.main-partners-block-wrap
+					.container
+						.main-partners-block-wrap_slider
+							.item
+								a(href="#")
+									img(src="img/userfiles/part-logos/1.png", alt="")
+							.item
+								a(href="#")
+									img(src="img/userfiles/part-logos/2.png", alt="")
+							.item
+								a(href="#")
+									img(src="img/userfiles/part-logos/3.png", alt="")
+							.item
+								a(href="#")
+									img(src="img/userfiles/part-logos/4.png", alt="")
+							.item
+								a(href="#")
+									img(src="img/userfiles/part-logos/5.png", alt="")
+							.item
+								a(href="#")
+									img(src="img/userfiles/part-logos/6.png", alt="")
+							.item
+								a(href="#")
+									img(src="img/userfiles/part-logos/7.png", alt="")
+							.item
+								a(href="#")
+									img(src="img/userfiles/part-logos/1.png", alt="")
+							.item
+								a(href="#")
+									img(src="img/userfiles/part-logos/2.png", alt="")
+							.item
+								a(href="#")
+									img(src="img/userfiles/part-logos/3.png", alt="")
+							.item
+								a(href="#")
+									img(src="img/userfiles/part-logos/4.png", alt="")
+
+				.main-items-wrap
+					.container
+						.main-items-wrap_title
+							span.text СПЕЦИАЛЬНЫЕ ПРЕДЛОЖЕНИЯ
+						.main-items-wrap_items-place.hidden-sm.hidden-xs
+							.row
+								.col-lg-4.col-md-5.hidden-sm.hidden-xs
+									.main-items-wrap_items-place_item
+										.main-items-wrap_items-place_item_img-wrap
+											.inner-wrap
+												a(href="#")
+													img(src="img/userfiles/home/item.jpg", alt="")
+													.flag-discount
+														svg.svg-icon.item-flag-icon
+																use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#item-flag-icon" )
+														span.text -10%
+										.main-items-wrap_items-place_item_name-wrap
+											span 
+												|Краска Tikkurila 
+												br
+												|EURO2 / 9 л
+										.main-items-wrap_items-place_item_price-wrap
+											.old-price
+												span 3 500
+											.cur-price
+												span 2 290
+												span.rouble й
+										.main-items-wrap_items-place_item_buttons-wrap
+											.count-btn-wrap
+												input(type="number", value="1", data-min-value="1")
+												span.plus
+												span.minus
+											.to-cart-btn-wrap
+												button.btn.blue-btn.fw В КОРЗИНУ
+								.col-lg-4.col-md-5.hidden-sm.hidden-xs
+									.main-items-wrap_items-place_item
+										.main-items-wrap_items-place_item_img-wrap
+											.inner-wrap
+												a(href="#")
+													img(src="img/userfiles/home/item.jpg", alt="")
+													.flag-discount
+														svg.svg-icon.item-flag-icon
+																use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#item-flag-icon" )
+														span.text -10%
+										.main-items-wrap_items-place_item_name-wrap
+											span 
+												|Краска Tikkurila 
+												br
+												|EURO2 / 9 л
+										.main-items-wrap_items-place_item_price-wrap
+											.old-price
+												span 3 500
+											.cur-price
+												span 2 290
+												span.rouble й
+										.main-items-wrap_items-place_item_buttons-wrap
+											.count-btn-wrap
+												input(type="number", value="1", data-min-value="1")
+												span.plus
+												span.minus
+											.to-cart-btn-wrap
+												button.btn.blue-btn.fw В КОРЗИНУ
+								.col-lg-4.col-md-5.hidden-sm.hidden-xs
+									.main-items-wrap_items-place_item
+										.main-items-wrap_items-place_item_img-wrap
+											.inner-wrap
+												a(href="#")
+													img(src="img/userfiles/home/item.jpg", alt="")
+													.flag-discount
+														svg.svg-icon.item-flag-icon
+																use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#item-flag-icon" )
+														span.text -10%
+										.main-items-wrap_items-place_item_name-wrap
+											span 
+												|Краска Tikkurila 
+												br
+												|EURO2 / 9 л
+										.main-items-wrap_items-place_item_price-wrap
+											.old-price
+												span 3 500
+											.cur-price
+												span 2 290
+												span.rouble й
+										.main-items-wrap_items-place_item_buttons-wrap
+											.count-btn-wrap
+												input(type="number", value="1", data-min-value="1")
+												span.plus
+												span.minus
+											.to-cart-btn-wrap
+												button.btn.blue-btn.fw В КОРЗИНУ
+								.col-lg-4.col-md-5.hidden-sm.hidden-xs
+									.main-items-wrap_items-place_item
+										.main-items-wrap_items-place_item_img-wrap
+											.inner-wrap
+												a(href="#")
+													img(src="img/userfiles/home/item.jpg", alt="")
+													.flag-discount
+														svg.svg-icon.item-flag-icon
+																use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#item-flag-icon" )
+														span.text -10%
+										.main-items-wrap_items-place_item_name-wrap
+											span 
+												|Краска Tikkurila 
+												br
+												|EURO2 / 9 л
+										.main-items-wrap_items-place_item_price-wrap
+											.old-price
+												span 3 500
+											.cur-price
+												span 2 290
+												span.rouble й
+										.main-items-wrap_items-place_item_buttons-wrap
+											.count-btn-wrap
+												input(type="number", value="1", data-min-value="1")
+												span.plus
+												span.minus
+											.to-cart-btn-wrap
+												button.btn.blue-btn.fw В КОРЗИНУ
+								.col-lg-4.hidden-md.hidden-sm.hidden-xs
+									.main-items-wrap_items-place_item
+										.main-items-wrap_items-place_item_img-wrap
+											.inner-wrap
+												a(href="#")
+													img(src="img/userfiles/home/item.jpg", alt="")
+													.flag-discount
+														svg.svg-icon.item-flag-icon
+																use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#item-flag-icon" )
+														span.text -10%
+										.main-items-wrap_items-place_item_name-wrap
+											span 
+												|Краска Tikkurila 
+												br
+												|EURO2 / 9 л
+										.main-items-wrap_items-place_item_price-wrap
+											.old-price
+												span 3 500
+											.cur-price
+												span 2 290
+												span.rouble й
+										.main-items-wrap_items-place_item_buttons-wrap
+											.count-btn-wrap
+												input(type="number", value="1", data-min-value="1")
+												span.plus
+												span.minus
+											.to-cart-btn-wrap
+												button.btn.blue-btn.fw В КОРЗИНУ
+							.main-items-wrap_items-place_more-items-wrap.hidden-xs.hidden-sm
+								button.btn.blu-bd-btn.fw 
+									span ПОКАЗАТЬ ЕЩЁ
+									svg.svg-icon.arrow-icon
+										use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#menu-arrow-icon" )
+						.main-items-wrap_items-mob-slider.visible-xs.visible-sm
+							.item
+								.main-items-wrap_items-place_item
+									.main-items-wrap_items-place_item_img-wrap
+										.inner-wrap
+											a(href="#")
+												img(src="img/userfiles/home/item.jpg", alt="")
+												.flag-discount
+													svg.svg-icon.item-flag-icon
+															use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#item-flag-icon" )
+													span.text -10%
+									.main-items-wrap_items-place_item_name-wrap
+										span 
+											|Краска Tikkurila 
+											br
+											|EURO2 / 9 л
+									.main-items-wrap_items-place_item_price-wrap
+										.old-price
+											span 3 500
+										.cur-price
+											span 2 290
+											span.rouble й
+									.main-items-wrap_items-place_item_buttons-wrap
+										.count-btn-wrap
+											input(type="number", value="1", data-min-value="1")
+											span.plus
+											span.minus
+										.to-cart-btn-wrap
+											button.btn.blue-btn.fw В КОРЗИНУ
+							.item
+								.main-items-wrap_items-place_item
+									.main-items-wrap_items-place_item_img-wrap
+										.inner-wrap
+											a(href="#")
+												img(src="img/userfiles/home/item.jpg", alt="")
+												.flag-discount
+													svg.svg-icon.item-flag-icon
+															use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#item-flag-icon" )
+													span.text -10%
+									.main-items-wrap_items-place_item_name-wrap
+										span 
+											|Краска Tikkurila 
+											br
+											|EURO2 / 9 л
+									.main-items-wrap_items-place_item_price-wrap
+										.old-price
+											span 3 500
+										.cur-price
+											span 2 290
+											span.rouble й
+									.main-items-wrap_items-place_item_buttons-wrap
+										.count-btn-wrap
+											input(type="number", value="1", data-min-value="1")
+											span.plus
+											span.minus
+										.to-cart-btn-wrap
+											button.btn.blue-btn.fw В КОРЗИНУ
+							.item
+								.main-items-wrap_items-place_item
+									.main-items-wrap_items-place_item_img-wrap
+										.inner-wrap
+											a(href="#")
+												img(src="img/userfiles/home/item.jpg", alt="")
+												.flag-discount
+													svg.svg-icon.item-flag-icon
+															use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#item-flag-icon" )
+													span.text -10%
+									.main-items-wrap_items-place_item_name-wrap
+										span 
+											|Краска Tikkurila 
+											br
+											|EURO2 / 9 л
+									.main-items-wrap_items-place_item_price-wrap
+										.old-price
+											span 3 500
+										.cur-price
+											span 2 290
+											span.rouble й
+									.main-items-wrap_items-place_item_buttons-wrap
+										.count-btn-wrap
+											input(type="number", value="1", data-min-value="1")
+											span.plus
+											span.minus
+										.to-cart-btn-wrap
+											button.btn.blue-btn.fw В КОРЗИНУ
+							.item
+								.main-items-wrap_items-place_item
+									.main-items-wrap_items-place_item_img-wrap
+										.inner-wrap
+											a(href="#")
+												img(src="img/userfiles/home/item.jpg", alt="")
+												.flag-discount
+													svg.svg-icon.item-flag-icon
+															use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#item-flag-icon" )
+													span.text -10%
+									.main-items-wrap_items-place_item_name-wrap
+										span 
+											|Краска Tikkurila 
+											br
+											|EURO2 / 9 л
+									.main-items-wrap_items-place_item_price-wrap
+										.old-price
+											span 3 500
+										.cur-price
+											span 2 290
+											span.rouble й
+									.main-items-wrap_items-place_item_buttons-wrap
+										.count-btn-wrap
+											input(type="number", value="1", data-min-value="1")
+											span.plus
+											span.minus
+										.to-cart-btn-wrap
+											button.btn.blue-btn.fw В КОРЗИНУ
+							.item
+								.main-items-wrap_items-place_item
+									.main-items-wrap_items-place_item_img-wrap
+										.inner-wrap
+											a(href="#")
+												img(src="img/userfiles/home/item.jpg", alt="")
+												.flag-discount
+													svg.svg-icon.item-flag-icon
+															use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#item-flag-icon" )
+													span.text -10%
+									.main-items-wrap_items-place_item_name-wrap
+										span 
+											|Краска Tikkurila 
+											br
+											|EURO2 / 9 л
+									.main-items-wrap_items-place_item_price-wrap
+										.old-price
+											span 3 500
+										.cur-price
+											span 2 290
+											span.rouble й
+									.main-items-wrap_items-place_item_buttons-wrap
+										.count-btn-wrap
+											input(type="number", value="1", data-min-value="1")
+											span.plus
+											span.minus
+										.to-cart-btn-wrap
+											button.btn.blue-btn.fw В КОРЗИНУ
+				
+				.main-items-wrap
+					.container
+						.main-items-wrap_title
+							span.text НОВОЕ ПОСТУПЛЕНИЕ
+						.main-items-wrap_items-place.hidden-sm.hidden-xs
+							.row
+								.col-lg-4.col-md-5.hidden-sm.hidden-xs
+									.main-items-wrap_items-place_item
+										.main-items-wrap_items-place_item_img-wrap
+											.inner-wrap
+												a(href="#")
+													img(src="img/userfiles/home/item.jpg", alt="")
+													.flag-new
+														svg.svg-icon.item-flag-icon
+																use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#item-flag-icon" )
+														span.text new
+										.main-items-wrap_items-place_item_name-wrap
+											span 
+												|Краска Tikkurila 
+												br
+												|EURO2 / 9 л
+										.main-items-wrap_items-place_item_price-wrap
+											.old-price
+												span 3 500
+											.cur-price
+												span 2 290
+												span.rouble й
+										.main-items-wrap_items-place_item_buttons-wrap
+											.count-btn-wrap
+												input(type="number", value="1", data-min-value="1")
+												span.plus
+												span.minus
+											.to-cart-btn-wrap
+												button.btn.blue-btn.fw В КОРЗИНУ
+								.col-lg-4.col-md-5.hidden-sm.hidden-xs
+									.main-items-wrap_items-place_item
+										.main-items-wrap_items-place_item_img-wrap
+											.inner-wrap
+												a(href="#")
+													img(src="img/userfiles/home/item.jpg", alt="")
+													.flag-new
+														svg.svg-icon.item-flag-icon
+																use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#item-flag-icon" )
+														span.text new
+										.main-items-wrap_items-place_item_name-wrap
+											span 
+												|Краска Tikkurila 
+												br
+												|EURO2 / 9 л
+										.main-items-wrap_items-place_item_price-wrap
+											.old-price
+												span 3 500
+											.cur-price
+												span 2 290
+												span.rouble й
+										.main-items-wrap_items-place_item_buttons-wrap
+											.count-btn-wrap
+												input(type="number", value="1", data-min-value="1")
+												span.plus
+												span.minus
+											.to-cart-btn-wrap
+												button.btn.blue-btn.fw В КОРЗИНУ
+								.col-lg-4.col-md-5.hidden-sm.hidden-xs
+									.main-items-wrap_items-place_item
+										.main-items-wrap_items-place_item_img-wrap
+											.inner-wrap
+												a(href="#")
+													img(src="img/userfiles/home/item.jpg", alt="")
+													.flag-new
+														svg.svg-icon.item-flag-icon
+																use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#item-flag-icon" )
+														span.text new
+										.main-items-wrap_items-place_item_name-wrap
+											span 
+												|Краска Tikkurila 
+												br
+												|EURO2 / 9 л
+										.main-items-wrap_items-place_item_price-wrap
+											.old-price
+												span 3 500
+											.cur-price
+												span 2 290
+												span.rouble й
+										.main-items-wrap_items-place_item_buttons-wrap
+											.count-btn-wrap
+												input(type="number", value="1", data-min-value="1")
+												span.plus
+												span.minus
+											.to-cart-btn-wrap
+												button.btn.blue-btn.fw В КОРЗИНУ
+								.col-lg-4.col-md-5.hidden-sm.hidden-xs
+									.main-items-wrap_items-place_item
+										.main-items-wrap_items-place_item_img-wrap
+											.inner-wrap
+												a(href="#")
+													img(src="img/userfiles/home/item.jpg", alt="")
+													.flag-new
+														svg.svg-icon.item-flag-icon
+																use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#item-flag-icon" )
+														span.text new
+										.main-items-wrap_items-place_item_name-wrap
+											span 
+												|Краска Tikkurila 
+												br
+												|EURO2 / 9 л
+										.main-items-wrap_items-place_item_price-wrap
+											.old-price
+												span 3 500
+											.cur-price
+												span 2 290
+												span.rouble й
+										.main-items-wrap_items-place_item_buttons-wrap
+											.count-btn-wrap
+												input(type="number", value="1", data-min-value="1")
+												span.plus
+												span.minus
+											.to-cart-btn-wrap
+												button.btn.blue-btn.fw В КОРЗИНУ
+								.col-lg-4.hidden-md.hidden-sm.hidden-xs
+									.main-items-wrap_items-place_item
+										.main-items-wrap_items-place_item_img-wrap
+											.inner-wrap
+												a(href="#")
+													img(src="img/userfiles/home/item.jpg", alt="")
+													.flag-new
+														svg.svg-icon.item-flag-icon
+																use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#item-flag-icon" )
+														span.text new
+										.main-items-wrap_items-place_item_name-wrap
+											span 
+												|Краска Tikkurila 
+												br
+												|EURO2 / 9 л
+										.main-items-wrap_items-place_item_price-wrap
+											.old-price
+												span 3 500
+											.cur-price
+												span 2 290
+												span.rouble й
+										.main-items-wrap_items-place_item_buttons-wrap
+											.count-btn-wrap
+												input(type="number", value="1", data-min-value="1")
+												span.plus
+												span.minus
+											.to-cart-btn-wrap
+												button.btn.blue-btn.fw В КОРЗИНУ
+							.main-items-wrap_items-place_more-items-wrap.hidden-xs.hidden-sm
+								button.btn.blu-bd-btn.fw 
+									span ПОКАЗАТЬ ЕЩЁ
+									svg.svg-icon.arrow-icon
+										use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#menu-arrow-icon" )
+						.main-items-wrap_items-mob-slider.visible-xs.visible-sm
+							.item
+								.main-items-wrap_items-place_item
+									.main-items-wrap_items-place_item_img-wrap
+										.inner-wrap
+											a(href="#")
+												img(src="img/userfiles/home/item.jpg", alt="")
+												.flag-new
+													svg.svg-icon.item-flag-icon
+															use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#item-flag-icon" )
+													span.text new
+									.main-items-wrap_items-place_item_name-wrap
+										span 
+											|Краска Tikkurila 
+											br
+											|EURO2 / 9 л
+									.main-items-wrap_items-place_item_price-wrap
+										.old-price
+											span 3 500
+										.cur-price
+											span 2 290
+											span.rouble й
+									.main-items-wrap_items-place_item_buttons-wrap
+										.count-btn-wrap
+											input(type="number", value="1", data-min-value="1")
+											span.plus
+											span.minus
+										.to-cart-btn-wrap
+											button.btn.blue-btn.fw В КОРЗИНУ
+							.item
+								.main-items-wrap_items-place_item
+									.main-items-wrap_items-place_item_img-wrap
+										.inner-wrap
+											a(href="#")
+												img(src="img/userfiles/home/item.jpg", alt="")
+												.flag-new
+													svg.svg-icon.item-flag-icon
+															use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#item-flag-icon" )
+													span.text new
+									.main-items-wrap_items-place_item_name-wrap
+										span 
+											|Краска Tikkurila 
+											br
+											|EURO2 / 9 л
+									.main-items-wrap_items-place_item_price-wrap
+										.old-price
+											span 3 500
+										.cur-price
+											span 2 290
+											span.rouble й
+									.main-items-wrap_items-place_item_buttons-wrap
+										.count-btn-wrap
+											input(type="number", value="1", data-min-value="1")
+											span.plus
+											span.minus
+										.to-cart-btn-wrap
+											button.btn.blue-btn.fw В КОРЗИНУ
+							.item
+								.main-items-wrap_items-place_item
+									.main-items-wrap_items-place_item_img-wrap
+										.inner-wrap
+											a(href="#")
+												img(src="img/userfiles/home/item.jpg", alt="")
+												.flag-new
+													svg.svg-icon.item-flag-icon
+															use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#item-flag-icon" )
+													span.text new
+									.main-items-wrap_items-place_item_name-wrap
+										span 
+											|Краска Tikkurila 
+											br
+											|EURO2 / 9 л
+									.main-items-wrap_items-place_item_price-wrap
+										.old-price
+											span 3 500
+										.cur-price
+											span 2 290
+											span.rouble й
+									.main-items-wrap_items-place_item_buttons-wrap
+										.count-btn-wrap
+											input(type="number", value="1", data-min-value="1")
+											span.plus
+											span.minus
+										.to-cart-btn-wrap
+											button.btn.blue-btn.fw В КОРЗИНУ
+							.item
+								.main-items-wrap_items-place_item
+									.main-items-wrap_items-place_item_img-wrap
+										.inner-wrap
+											a(href="#")
+												img(src="img/userfiles/home/item.jpg", alt="")
+												.flag-new
+													svg.svg-icon.item-flag-icon
+															use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#item-flag-icon" )
+													span.text new
+									.main-items-wrap_items-place_item_name-wrap
+										span 
+											|Краска Tikkurila 
+											br
+											|EURO2 / 9 л
+									.main-items-wrap_items-place_item_price-wrap
+										.old-price
+											span 3 500
+										.cur-price
+											span 2 290
+											span.rouble й
+									.main-items-wrap_items-place_item_buttons-wrap
+										.count-btn-wrap
+											input(type="number", value="1", data-min-value="1")
+											span.plus
+											span.minus
+										.to-cart-btn-wrap
+											button.btn.blue-btn.fw В КОРЗИНУ
+							.item
+								.main-items-wrap_items-place_item
+									.main-items-wrap_items-place_item_img-wrap
+										.inner-wrap
+											a(href="#")
+												img(src="img/userfiles/home/item.jpg", alt="")
+												.flag-new
+													svg.svg-icon.item-flag-icon
+															use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#item-flag-icon" )
+													span.text new
+									.main-items-wrap_items-place_item_name-wrap
+										span 
+											|Краска Tikkurila 
+											br
+											|EURO2 / 9 л
+									.main-items-wrap_items-place_item_price-wrap
+										.old-price
+											span 3 500
+										.cur-price
+											span 2 290
+											span.rouble й
+									.main-items-wrap_items-place_item_buttons-wrap
+										.count-btn-wrap
+											input(type="number", value="1", data-min-value="1")
+											span.plus
+											span.minus
+										.to-cart-btn-wrap
+											button.btn.blue-btn.fw В КОРЗИНУ
+
+				.container
+					.main-text-block
+						.main-text-block_title
+							span ОКЕАН – ЭТО САМЫЙ БОЛЬШОЙ ОНЛАЙН ГИПЕРМАРКЕТ СТРОИТЕЛЬНЫХ МАТЕРИАЛОВ В НИЖНЕМ НОВГОРОДЕ
+						.main-text-block_text
+							p ООО «ОКЕАН» основан в 1995 году. Специализируется на торговле строительными материалами. Компании принадлежит сеть из пятнадцати торговых подразделений в СПб, СЗФО и Центральном Федеральном Округе, а также производственные площадки. Ассортимент компании насчитывает более 15 тысяч SKU. Основный объем продаж составляют материалы общестроительного назначения. Компания СТД «Петрович» позиционирует себя как мультиканальный ритейлер, что отличает её от большинства конкурентов. 
+							p Для физических лиц разработана программа лояльности «ОКЕАН», которая на сегодняшний день насчитывает более 200 тысяч активных участников. По итогам 2013 и 2014 годов «Петрович» занимает четвертое место в России среди компаний, торгующих строительными материалами, и является крупнейшей из отечественных DIY-сетей (рейтинг INFOLine «DIY Retailer Russia Top»).
+						.main-text-block_button-place
+							a.btn.btn.blu-bd-btn.fw.light-blue(href="#") ПОДРОБНЕЕ
+
+			include includes/_footer.jade
+
+		include includes/_modals.jade
+
+
+
+
+
+		include includes/js-links.jade

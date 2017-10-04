@@ -1,0 +1,59 @@
+header
+	.container
+		.row
+			.col-md-5
+				.header_logo-place
+					a(href="#")
+						img(src="img/template/header-logo.png", alt="")
+			.col-md-15
+				.header_top-line.clearfix
+					.header_top-line_nav.hidden-sm.hidden-xs
+						ul.clearfix
+							li
+								a(href="#") Главная
+							li
+								a(href="#") ОПЛАТА
+							li
+								a(href="#") ДОСТАВКА
+							li
+								a(href="#") СКИДКИ
+							li
+								a(href="#") КОНТАКТЫ
+					.header_top-line_phone-place
+						a(href="#")
+							svg.svg-icon.tel-icon
+								use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#tel-icon" )
+							span.text 
+								| (831) 
+								b 211-37-07
+					.header_top-line_enter-and-reg
+						svg.svg-icon.user-icon
+								use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#user-icon" )
+						a(href="#") Вход
+						span.separator /
+						a(href="#") Регистрация 
+				.header_bottom-line.clearfix
+					.header_bottom-line_search
+						form(action="#")
+							.input-wrap
+								input(type="text", placeholder="ВВЕДИТЕ СВОЙ ПОИСКОВЫЙ ЗАПРОС")
+								input(type="submit")
+								button(type="submit").btn
+									svg.svg-icon.search-icon
+										use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#search-icon" )
+					.header_bottom-line_cart
+						a(href="#")
+							svg.svg-icon.cart-icon
+								use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#cart-icon" )
+							span.text.hidden-xs Корзина пуста
+					.mob-button-trigger.catalog-mob-trigger.visible-xs.visible-sm
+						span.text Каталог
+						span.line
+						span.line.p60
+						span.line
+					.mob-button-trigger.menu-mob-trigger.visible-xs.visible-sm
+						span.text Меню
+						span.line
+						span.line
+						span.line
+

@@ -1,0 +1,64 @@
+/*=================================================
+=            .main-partners-block-wrap            =
+=================================================*/
+
+.main-partners-block-wrap {
+	margin-top: 47px;
+	@media (max-width: @screen-md-max) {
+		margin-top: 30px;
+	}
+	@media (max-width: @screen-sm-max) {
+		margin-top: 15px;
+	}
+	@media (max-width: @screen-xs-max) {
+		margin-top: 0;
+	}
+	.item {
+		position: relative;
+		height: 110px;
+		a {
+			display: block;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 50%;
+			transform: translateY(-50%) translateZ(0) scale(1.0, 1.0);
+			-webkit-backface-visibility: hidden;
+			padding: 0 20px;
+			&:hover {
+				img {
+					-webkit-filter: grayscale(0);
+					filter: grayscale(0);
+				}
+			}
+		}
+		img {
+			max-width: 100%;
+			width: auto;
+			height: auto;
+			-webkit-filter: grayscale(1);
+			filter: grayscale(1);
+			transition: filter 0.3s ease;
+		}
+	}
+	.owl-theme .owl-controls .owl-page + .owl-page {
+		margin-left: 10px;
+	}
+	.owl-theme .owl-controls .owl-page.active span {
+		opacity: 0.3;
+	}
+	.owl-theme .owl-controls .owl-page span {
+		margin: 0;
+		padding: 0;
+		opacity: 1;
+		transition: opacity 0.3s ease;
+		background: #cccccc;
+		width: 10px;
+		height: 10px;
+	}
+	.owl-theme .owl-controls {
+		margin-top: 8px;
+	}
+}
+
+/*=====  End of .main-partners-block-wrap  ======*/

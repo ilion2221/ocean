@@ -1,0 +1,108 @@
+doctype
+html
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, height=device-height, initial-scale=1, user-scalable=no, maximum-scale=1.0')
+		title index
+		include includes/css-links.jade
+
+	body
+		include includes/svg.jade
+		.page-wrapp
+			.content-without-footer
+				include includes/_header.jade
+				.container
+					.row
+						.col-md-5
+							include includes/_main-nav-wrap.jade
+						.col-md-15
+							.main-breadcrumbs
+								ul
+									li
+										a(href="#") Главная
+									li
+										span Доставка
+							.delivery-wrap
+								.delivery-wrap_title
+									span ДОСТАВКА
+								.delivery-wrap_block.price
+									.delivery-wrap_block_title
+										span СТОИМОСТЬ ДОСТАВКИ
+									ul.wi
+										li
+											svg.svg-icon.icon-ul-wi
+												use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#icon-ul-wi" )
+											.title
+												span Доставка по Нижнему Новгороду – 500 р.
+										li
+											svg.svg-icon.icon-ul-wi
+												use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#icon-ul-wi" )
+											.title
+												span Доставка по Нижегородской области до 50 км. – 700 р.
+											.text
+												span Расстояние более 50 км. расчитывается индивидуально.
+										li
+											svg.svg-icon.icon-ul-wi
+												use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#icon-ul-wi" )
+											.title
+												span При заказе от 5000 р. доставка осуществляется бесплатно.
+											.text
+												span Включая Нижний Новгород и Нижегородскую область.
+										li
+											svg.svg-icon.icon-ul-wi
+												use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#icon-ul-wi" )
+											.title
+												span Стоимость разгрузки и подъема расчитывается отдельно.
+								.delivery-wrap_block.time
+									.delivery-wrap_block_title
+										span ВРЕМЯ ДОСТАВКИ
+									ul.wi
+										li
+											svg.svg-icon.icon-ul-wi
+												use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#icon-ul-wi" )
+											.title
+												span Заказы доставляются в течении 1-2 дней с момента оформления заказа. 
+										li
+											svg.svg-icon.icon-ul-wi
+												use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#icon-ul-wi" )
+											.title
+												span Время доставки с 8:00 до 22:00 в будние и выходные дни. 
+								.delivery-wrap_block.time
+									.delivery-wrap_block_title
+										span ИНФОРМАЦИЯ ДЛЯ ПОКУПАТЕЛЕЙ
+									ul.wn
+										li
+											span.number 1.
+											span.text Заказ будет доставлен в удобный для Вас день, с временным интервалом не менее 4 часов, заранее определенный с менеждером нашего магазина.
+										li
+											span.number 2.
+											span.text В день заказ Вы получаете смс - уведомление с номером заказа, именем курьера и его телефонным номером.  курьером будет сделан предварительный звонок для согласования времени доставки.
+										li
+											span.number 3.
+											span.text При получении товара проверьте упаковку на наличие повреждений, вскрытия, помятостей. Затем вскройте 	коробку, осмотрите внимательно товар, проверьте комплектацию.
+										li
+											span.number 4.
+											span.text После этого необходимо поставить подпись в маршрутной квитанции курьера, что будет свидетельствовать	о то, что Вы приняли заказ (товар), надлежащего вида и полной комплектации.
+										li
+											span.number 5.
+											span.text 
+												| Вместе с заказом вы получите:
+												br
+												| – для физических лиц: товарный и кассовый чек
+												br
+												| – для юридических лиц: оригинал счета, накладную, счет-фактуру
+												br
+												| – гарантийный талон с печатью и инструкцию по экслуатации
+
+
+
+
+											
+
+
+			include includes/_footer.jade
+
+		include includes/_modals.jade
+
+		include includes/js-links.jade

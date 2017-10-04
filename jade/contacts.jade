@@ -1,0 +1,68 @@
+doctype
+html
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, height=device-height, initial-scale=1, user-scalable=no, maximum-scale=1.0')
+		title index
+		include includes/css-links.jade
+
+	body
+		include includes/svg.jade
+		.page-wrapp
+			.content-without-footer
+				include includes/_header.jade
+				.container
+					.row
+						.col-md-5
+							include includes/_main-nav-wrap.jade
+						.col-md-15
+							.main-breadcrumbs
+								ul
+									li
+										a(href="#") Главная
+									li
+										span  Контакты
+							.contacts-wrap
+								.contacts-wrap_title
+									span КОНТАКТНАЯ ИНФОРМАЦИЯ
+								.clearfix
+									.contacts-wrap_map-place#contactsMapPlace
+									.contacts-wrap_blocks-wrap
+										.contacts-wrap_block
+											.title
+												span ЦЕНТРАЛЬНЫЙ ОФИС
+											.line-w-icon
+												svg.svg-icon.loc-icon
+													use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#loc-icon" )
+												span Нижний Новгород, ул. Торфяная, 30
+											.line-w-icon
+												svg.svg-icon.tel-icon
+													use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#tel-icon" )
+												span +7 (831) 211-37-07
+											.line-w-icon
+												svg.svg-icon.mail-icon
+													use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#mail-icon" )
+												span info@okean24.ru
+										.contacts-wrap_block
+											.title
+												span НАШИ РЕКВИЗИТЫ
+											.line
+												span 
+													| Юридический адрес:
+													br
+													| г. Нижний Новгород, ул. Торфяная, 30
+
+											.line
+												span ИНН 8601000666
+
+											.line
+												span КПП 775043001
+
+
+
+			include includes/_footer.jade
+
+		include includes/_modals.jade
+
+		include includes/js-links.jade

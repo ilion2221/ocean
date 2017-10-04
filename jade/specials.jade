@@ -1,0 +1,78 @@
+doctype
+html
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, height=device-height, initial-scale=1, user-scalable=no, maximum-scale=1.0')
+		title index
+		include includes/css-links.jade
+
+	body
+		include includes/svg.jade
+		.page-wrapp
+			.content-without-footer
+				include includes/_header.jade
+				.container
+					.row
+						.col-md-5
+							include includes/_main-nav-wrap.jade
+						.col-md-15
+							.main-breadcrumbs
+								ul
+									li
+										a(href="#") Главная
+									li
+										span Скидки
+							.specials-wrap
+								.specials-wrap_title
+									span СКИДКИ И СПЕЦИАЛЬНЫЕ ПРЕДЛОЖЕНИЯ
+								.specials-wrap_lines-wrap
+									.specials-wrap_line.clearfix
+										.img-wrap
+											img(src="img/userfiles/specials/img.jpg", alt="")
+										.text-wrap
+											.text-wrap_title
+												span Оплачивайте товары банковской картой на сайте и получайте скидку
+											.text-wrap_text
+												p 
+												| При оплате на сайте банковской картой (VISA, 
+												| MasterCard) Вы получаете скидку 
+												b 3% 
+												| от общей сумму заказа.
+									.specials-wrap_line.clearfix
+										.img-wrap
+											img(src="img/userfiles/specials/img.jpg", alt="")
+										.text-wrap
+											.text-wrap_title
+												span Оплачивайте товары банковской картой на сайте и получайте скидку
+											.text-wrap_text
+												p 
+												| При оплате на сайте банковской картой (VISA, 
+												| MasterCard) Вы получаете скидку 
+												b 3% 
+												| от общей сумму заказа.
+									.specials-wrap_line.clearfix
+										.img-wrap
+											img(src="img/userfiles/specials/img.jpg", alt="")
+										.text-wrap
+											.text-wrap_title
+												span Оплачивайте товары банковской картой на сайте и получайте скидку
+											.text-wrap_text
+												p 
+												| При оплате на сайте банковской картой (VISA, 
+												| MasterCard) Вы получаете скидку 
+												b 3% 
+												| от общей сумму заказа.
+								.specials-wrap_button-wrap
+									button.btn.blu-bd-btn.fw 
+										span ПОКАЗАТЬ ЕЩЁ
+										svg.svg-icon.arrow-icon
+											use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#menu-arrow-icon" )
+											
+
+
+			include includes/_footer.jade
+
+		include includes/_modals.jade
+
+		include includes/js-links.jade

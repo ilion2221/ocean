@@ -1,0 +1,49 @@
+/*=========================================
+=            .main-breadcrumbs            =
+=========================================*/
+
+.main-breadcrumbs {
+	margin-top: 13px;
+	margin-left: 0px;
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		li {
+			display: inline-block;
+			vertical-align: top;
+			margin-right: 19px;
+			&:last-child {
+				margin-right: 0;
+			}
+			position: relative;
+			font-size: 13px;
+			color: #737373;
+			&:last-child {
+				&:before {
+					display: none;
+				}
+			}
+			&:before {
+				content: '>';
+				position: absolute;
+				display: block;
+				top: 0px;
+				right: -15px;
+				font-size: 13px;
+				color: #cccccc;
+			}
+			a {
+				text-decoration: none !important;
+				font-size: 13px;
+				color: #cccccc;
+				transition: color 0.3s ease;
+				&:hover {
+					color: #00b6f2;
+				}
+			}
+		}
+	}
+}
+
+/*=====  End of .main-breadcrumbs  ======*/

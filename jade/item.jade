@@ -1,0 +1,494 @@
+doctype
+html
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, height=device-height, initial-scale=1, user-scalable=no, maximum-scale=1.0')
+		title index
+		include includes/css-links.jade
+
+	body
+		include includes/svg.jade
+		.page-wrapp
+			.content-without-footer
+				include includes/_header.jade
+				.container
+					.row
+						.col-md-5
+							include includes/_main-nav-wrap_catalog.jade
+						.col-md-15
+							.main-breadcrumbs
+								ul
+									li
+										a(href="#") Главная
+									li
+										a(href="#") Каталог  
+									li
+										a(href="#") Строительные материалы
+									li
+										a(href="#") Теплоизоляция
+									li
+										span Rockwool Флор Батс
+
+					.good-item-wrap
+
+						.good-item_title.clearfix
+							h1 Тепло и звукоизоляция Rockwool Флор Батс 25 мм в упаковке 4,8 кв.м
+							span.art Артикул: 123702
+
+						.good-item_slider-and-desc
+							.row
+								.col-lg-11.col-md-10
+									.good-item_slider-wrap
+										.good-item_slider-wrap_big
+											.item
+												img(src="img/userfiles/item/item-big.jpg", alt="")
+											.item
+												img(src="img/userfiles/item/item-big.jpg", alt="")
+											.item
+												img(src="img/userfiles/item/item-big.jpg", alt="")
+											.item
+												img(src="img/userfiles/item/item-big.jpg", alt="")
+											.item
+												img(src="img/userfiles/item/item-big.jpg", alt="")
+											.item
+												img(src="img/userfiles/item/item-big.jpg", alt="")
+										.good-item_slider-wrap_thumbs.hidden-xs
+											.item
+												img(src="img/userfiles/item/item-big.jpg", alt="")
+											.item
+												img(src="img/userfiles/item/item-big.jpg", alt="")
+											.item
+												img(src="img/userfiles/item/item-big.jpg", alt="")
+											.item
+												img(src="img/userfiles/item/item-big.jpg", alt="")
+											.item
+												img(src="img/userfiles/item/item-big.jpg", alt="")
+											.item
+												img(src="img/userfiles/item/item-big.jpg", alt="")
+								.col-lg-9.col-md-10
+									.good-item_desc
+										.good-item_desc_block-1
+											.line
+												span.text1 Производитель:
+												span.text2 Rockwool
+											.line
+												span.text1 Страна:
+												span.text2 Россия
+											.line
+												span.text1 Вид основы:
+												span.text2 Базальт
+											.line
+												span.text1 Назначение:
+												span.text2 Тепло- и звукоизоляция
+											.line
+												span.text1 Область применения:
+												span.text2 Пол
+										.good-item_desc_block-2.clearfix
+											.left.pull-left
+												.in-nal.in
+													span в наличии
+												.line
+													span.text1 Самовывоз:
+													span.text2 Сегодня
+												.line
+													span.text1 Доставка:
+													span.text2 Через два дня
+											.right.pull-right
+												.price
+													span 1 270
+													span.rouble й
+												.main-items-wrap_items-place_item_buttons-wrap
+													.count-btn-wrap
+														input(type="number", value="1", data-min-value="1")
+														span.plus
+														span.minus
+													.to-cart-btn-wrap
+														button.btn.blue-btn.fw В КОРЗИНУ
+										.good-item_desc_block-3.clearfix
+											.pull-left
+												svg.svg-icon.delivery-icon
+													use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#delivery-icon" )
+												.text 
+													span при заказе от 5 000 р. доставка бесплатная
+												.info-link.left
+													.info-link_icon
+													.info-link_text
+														span При заказе от 5 000 р. доставка по Нижнему Новгороду бесплатная. Время доставки с 8:00 до 20:00 в будние дни. Стоимость разгрузки и подъема рассчитывается отдельно.
+
+											.pull-left
+												svg.svg-icon.card-icon
+													use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#card-icon" )
+												.text 
+													span при оплате на сайте – скидка 3%
+												.info-link.left
+													.info-link_icon
+													.info-link_text
+														span Скидка при он-лайн оплате на сайте банковской картой (VISA, MasterCard, Maestro) – 3% от стоимости заказа без учета доставки
+										.good-item_desc_block-4
+											p 
+												| ФЛОР БАТТС - жесткие плиты, изготовленные из каменной ваты на основе горных 
+												| пород. Изолируйте свою квартиру или коттедж звукоизоляционными плитами. 
+												| Плиты обеспечивают снижение ударного шума до 38 дБ, создают комфортную 
+												| температуру пола, не горючие, и абсолютно не боятся влаги. 
+												br 
+												| Применение:
+											p Плиты из каменной ваты ФЛОР БАТТС предназначены для тепловой изоляции полов по грунту, а также для устройства акустических плавающих полов. Предназначены для полов с нормативной нагрузкой до 3 кПа.
+
+						.good-item_tabs.clearfix
+							.good-item_tabs_navs
+								ul.nav.nav-tabs.clearfix
+									li.active 
+										a(href="#tab1", data-toggle="tab") ОПИСАНИЕ
+									li 
+										a(href="#tab2", data-toggle="tab") ХАРАКТЕРИСТИКИ
+									li 
+										a(href="#tab3", data-toggle="tab") ОТЗЫВЫ
+									li 
+										a(href="#tab4", data-toggle="tab") РАСХОДНЫЕ МАТЕРИАЛЫ
+									li 
+										a(href="#tab5", data-toggle="tab") КОМПЛЕКТУЮЩИЕ
+							.good-item_tabs_content
+								.tab-content
+									.tab-pane.active.fade.in#tab1
+										h3 Подробное описание
+										p ФЛОР БАТТС - жесткие плиты, изготовленные из каменной ваты на основе горных пород. Изолируйте свою квартиру или коттедж звукоизоляционными плитами. Плиты обеспечивают снижение ударного шума до 38 дБ, создают комфортную температуру пола, не горючие, и абсолютно не боятся влаги. Часто применяются для звукоизоляции гостиниц, кинотеатров и офисов. 
+										h5 Применение:
+										p
+											| Плиты из каменной ваты ФЛОР БАТТС предназначены для тепловой изоляции полов 
+											| по грунту, а также для устройства акустических плавающих полов.
+											| Предназначены для полов с нормативной нагрузкой до 3 кПа.
+										h5 Область применения:
+										ul
+											li – под цементную стяжку
+											li – под наливную стяжку
+											li – под теплые полы
+											li – под стяжку из фанеры, ГВЛ, OSB, ЦСП
+									.tab-pane.fade#tab2
+										h3 ХАРАКТЕРИСТИКИ
+										p ФЛОР БАТТС - жесткие плиты, изготовленные из каменной ваты на основе горных пород. Изолируйте свою квартиру или коттедж звукоизоляционными плитами. Плиты обеспечивают снижение ударного шума до 38 дБ, создают комфортную температуру пола, не горючие, и абсолютно не боятся влаги. Часто применяются для звукоизоляции гостиниц, кинотеатров и офисов. 
+										h5 Применение:
+										p
+											| Плиты из каменной ваты ФЛОР БАТТС предназначены для тепловой изоляции полов 
+											| по грунту, а также для устройства акустических плавающих полов.
+											| Предназначены для полов с нормативной нагрузкой до 3 кПа.
+										h5 Область применения:
+										ul
+											li – под цементную стяжку
+											li – под наливную стяжку
+											li – под теплые полы
+											li – под стяжку из фанеры, ГВЛ, OSB, ЦСП
+									.tab-pane.fade#tab3
+										h3 ОТЗЫВЫ
+										p ФЛОР БАТТС - жесткие плиты, изготовленные из каменной ваты на основе горных пород. Изолируйте свою квартиру или коттедж звукоизоляционными плитами. Плиты обеспечивают снижение ударного шума до 38 дБ, создают комфортную температуру пола, не горючие, и абсолютно не боятся влаги. Часто применяются для звукоизоляции гостиниц, кинотеатров и офисов. 
+										h5 Применение:
+										p
+											| Плиты из каменной ваты ФЛОР БАТТС предназначены для тепловой изоляции полов 
+											| по грунту, а также для устройства акустических плавающих полов.
+											| Предназначены для полов с нормативной нагрузкой до 3 кПа.
+										h5 Область применения:
+										ul
+											li – под цементную стяжку
+											li – под наливную стяжку
+											li – под теплые полы
+											li – под стяжку из фанеры, ГВЛ, OSB, ЦСП
+									.tab-pane.fade#tab4
+										h3 РАСХОДНЫЕ МАТЕРИАЛЫ
+										p ФЛОР БАТТС - жесткие плиты, изготовленные из каменной ваты на основе горных пород. Изолируйте свою квартиру или коттедж звукоизоляционными плитами. Плиты обеспечивают снижение ударного шума до 38 дБ, создают комфортную температуру пола, не горючие, и абсолютно не боятся влаги. Часто применяются для звукоизоляции гостиниц, кинотеатров и офисов. 
+										h5 Применение:
+										p
+											| Плиты из каменной ваты ФЛОР БАТТС предназначены для тепловой изоляции полов 
+											| по грунту, а также для устройства акустических плавающих полов.
+											| Предназначены для полов с нормативной нагрузкой до 3 кПа.
+										h5 Область применения:
+										ul
+											li – под цементную стяжку
+											li – под наливную стяжку
+											li – под теплые полы
+											li – под стяжку из фанеры, ГВЛ, OSB, ЦСП
+									.tab-pane.fade#tab5
+										h3 КОМПЛЕКТУЮЩИЕ
+										p ФЛОР БАТТС - жесткие плиты, изготовленные из каменной ваты на основе горных пород. Изолируйте свою квартиру или коттедж звукоизоляционными плитами. Плиты обеспечивают снижение ударного шума до 38 дБ, создают комфортную температуру пола, не горючие, и абсолютно не боятся влаги. Часто применяются для звукоизоляции гостиниц, кинотеатров и офисов. 
+										h5 Применение:
+										p
+											| Плиты из каменной ваты ФЛОР БАТТС предназначены для тепловой изоляции полов 
+											| по грунту, а также для устройства акустических плавающих полов.
+											| Предназначены для полов с нормативной нагрузкой до 3 кПа.
+										h5 Область применения:
+										ul
+											li – под цементную стяжку
+											li – под наливную стяжку
+											li – под теплые полы
+											li – под стяжку из фанеры, ГВЛ, OSB, ЦСП
+
+						.good-item_similar-slider.hidden-xs
+							.main-items-wrap_title
+								span.text С ЭТИМ ТОВАРОМ ТАКЖЕ СМОТРЯТ
+
+							.good-item_similar-slider_slider
+								.item
+									.main-items-wrap_items-place_item
+										.main-items-wrap_items-place_item_img-wrap
+											.inner-wrap
+												a(href="#")
+													img(src="img/userfiles/home/item.jpg", alt="")
+													.flag-discount
+														svg.svg-icon.item-flag-icon
+																use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#item-flag-icon" )
+														span.text -10%
+										.main-items-wrap_items-place_item_name-wrap
+											span 
+												|Краска Tikkurila 
+												br
+												|EURO2 / 9 л
+										.main-items-wrap_items-place_item_price-wrap
+											.old-price
+												span 3 500
+											.cur-price
+												span 2 290
+												span.rouble й
+										.main-items-wrap_items-place_item_buttons-wrap
+											.count-btn-wrap
+												input(type="number", value="1", data-min-value="1")
+												span.plus
+												span.minus
+											.to-cart-btn-wrap
+												button.btn.blue-btn.fw В КОРЗИНУ
+								.item
+									.main-items-wrap_items-place_item
+										.main-items-wrap_items-place_item_img-wrap
+											.inner-wrap
+												a(href="#")
+													img(src="img/userfiles/home/item.jpg", alt="")
+													.flag-discount
+														svg.svg-icon.item-flag-icon
+																use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#item-flag-icon" )
+														span.text -10%
+										.main-items-wrap_items-place_item_name-wrap
+											span 
+												|Краска Tikkurila 
+												br
+												|EURO2 / 9 л
+										.main-items-wrap_items-place_item_price-wrap
+											.old-price
+												span 3 500
+											.cur-price
+												span 2 290
+												span.rouble й
+										.main-items-wrap_items-place_item_buttons-wrap
+											.count-btn-wrap
+												input(type="number", value="1", data-min-value="1")
+												span.plus
+												span.minus
+											.to-cart-btn-wrap
+												button.btn.blue-btn.fw В КОРЗИНУ
+								.item
+									.main-items-wrap_items-place_item
+										.main-items-wrap_items-place_item_img-wrap
+											.inner-wrap
+												a(href="#")
+													img(src="img/userfiles/home/item.jpg", alt="")
+													.flag-discount
+														svg.svg-icon.item-flag-icon
+																use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#item-flag-icon" )
+														span.text -10%
+										.main-items-wrap_items-place_item_name-wrap
+											span 
+												|Краска Tikkurila 
+												br
+												|EURO2 / 9 л
+										.main-items-wrap_items-place_item_price-wrap
+											.old-price
+												span 3 500
+											.cur-price
+												span 2 290
+												span.rouble й
+										.main-items-wrap_items-place_item_buttons-wrap
+											.count-btn-wrap
+												input(type="number", value="1", data-min-value="1")
+												span.plus
+												span.minus
+											.to-cart-btn-wrap
+												button.btn.blue-btn.fw В КОРЗИНУ
+								.item
+									.main-items-wrap_items-place_item
+										.main-items-wrap_items-place_item_img-wrap
+											.inner-wrap
+												a(href="#")
+													img(src="img/userfiles/home/item.jpg", alt="")
+													.flag-discount
+														svg.svg-icon.item-flag-icon
+																use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#item-flag-icon" )
+														span.text -10%
+										.main-items-wrap_items-place_item_name-wrap
+											span 
+												|Краска Tikkurila 
+												br
+												|EURO2 / 9 л
+										.main-items-wrap_items-place_item_price-wrap
+											.old-price
+												span 3 500
+											.cur-price
+												span 2 290
+												span.rouble й
+										.main-items-wrap_items-place_item_buttons-wrap
+											.count-btn-wrap
+												input(type="number", value="1", data-min-value="1")
+												span.plus
+												span.minus
+											.to-cart-btn-wrap
+												button.btn.blue-btn.fw В КОРЗИНУ
+								.item
+									.main-items-wrap_items-place_item
+										.main-items-wrap_items-place_item_img-wrap
+											.inner-wrap
+												a(href="#")
+													img(src="img/userfiles/home/item.jpg", alt="")
+													.flag-discount
+														svg.svg-icon.item-flag-icon
+																use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#item-flag-icon" )
+														span.text -10%
+										.main-items-wrap_items-place_item_name-wrap
+											span 
+												|Краска Tikkurila 
+												br
+												|EURO2 / 9 л
+										.main-items-wrap_items-place_item_price-wrap
+											.old-price
+												span 3 500
+											.cur-price
+												span 2 290
+												span.rouble й
+										.main-items-wrap_items-place_item_buttons-wrap
+											.count-btn-wrap
+												input(type="number", value="1", data-min-value="1")
+												span.plus
+												span.minus
+											.to-cart-btn-wrap
+												button.btn.blue-btn.fw В КОРЗИНУ
+								.item
+									.main-items-wrap_items-place_item
+										.main-items-wrap_items-place_item_img-wrap
+											.inner-wrap
+												a(href="#")
+													img(src="img/userfiles/home/item.jpg", alt="")
+													.flag-discount
+														svg.svg-icon.item-flag-icon
+																use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#item-flag-icon" )
+														span.text -10%
+										.main-items-wrap_items-place_item_name-wrap
+											span 
+												|Краска Tikkurila 
+												br
+												|EURO2 / 9 л
+										.main-items-wrap_items-place_item_price-wrap
+											.old-price
+												span 3 500
+											.cur-price
+												span 2 290
+												span.rouble й
+										.main-items-wrap_items-place_item_buttons-wrap
+											.count-btn-wrap
+												input(type="number", value="1", data-min-value="1")
+												span.plus
+												span.minus
+											.to-cart-btn-wrap
+												button.btn.blue-btn.fw В КОРЗИНУ
+								.item
+									.main-items-wrap_items-place_item
+										.main-items-wrap_items-place_item_img-wrap
+											.inner-wrap
+												a(href="#")
+													img(src="img/userfiles/home/item.jpg", alt="")
+													.flag-discount
+														svg.svg-icon.item-flag-icon
+																use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#item-flag-icon" )
+														span.text -10%
+										.main-items-wrap_items-place_item_name-wrap
+											span 
+												|Краска Tikkurila 
+												br
+												|EURO2 / 9 л
+										.main-items-wrap_items-place_item_price-wrap
+											.old-price
+												span 3 500
+											.cur-price
+												span 2 290
+												span.rouble й
+										.main-items-wrap_items-place_item_buttons-wrap
+											.count-btn-wrap
+												input(type="number", value="1", data-min-value="1")
+												span.plus
+												span.minus
+											.to-cart-btn-wrap
+												button.btn.blue-btn.fw В КОРЗИНУ
+								.item
+									.main-items-wrap_items-place_item
+										.main-items-wrap_items-place_item_img-wrap
+											.inner-wrap
+												a(href="#")
+													img(src="img/userfiles/home/item.jpg", alt="")
+													.flag-discount
+														svg.svg-icon.item-flag-icon
+																use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#item-flag-icon" )
+														span.text -10%
+										.main-items-wrap_items-place_item_name-wrap
+											span 
+												|Краска Tikkurila 
+												br
+												|EURO2 / 9 л
+										.main-items-wrap_items-place_item_price-wrap
+											.old-price
+												span 3 500
+											.cur-price
+												span 2 290
+												span.rouble й
+										.main-items-wrap_items-place_item_buttons-wrap
+											.count-btn-wrap
+												input(type="number", value="1", data-min-value="1")
+												span.plus
+												span.minus
+											.to-cart-btn-wrap
+												button.btn.blue-btn.fw В КОРЗИНУ
+								.item
+									.main-items-wrap_items-place_item
+										.main-items-wrap_items-place_item_img-wrap
+											.inner-wrap
+												a(href="#")
+													img(src="img/userfiles/home/item.jpg", alt="")
+													.flag-discount
+														svg.svg-icon.item-flag-icon
+																use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#item-flag-icon" )
+														span.text -10%
+										.main-items-wrap_items-place_item_name-wrap
+											span 
+												|Краска Tikkurila 
+												br
+												|EURO2 / 9 л
+										.main-items-wrap_items-place_item_price-wrap
+											.old-price
+												span 3 500
+											.cur-price
+												span 2 290
+												span.rouble й
+										.main-items-wrap_items-place_item_buttons-wrap
+											.count-btn-wrap
+												input(type="number", value="1", data-min-value="1")
+												span.plus
+												span.minus
+											.to-cart-btn-wrap
+												button.btn.blue-btn.fw В КОРЗИНУ
+
+
+
+
+
+
+
+							
+
+			include includes/_footer.jade
+
+		include includes/_modals.jade
+
+		include includes/js-links.jade

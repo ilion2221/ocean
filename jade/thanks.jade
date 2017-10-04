@@ -1,0 +1,43 @@
+doctype
+html
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, height=device-height, initial-scale=1, user-scalable=no, maximum-scale=1.0')
+		title index
+		include includes/css-links.jade
+
+	body
+		include includes/svg.jade
+		.page-wrapp
+			.content-without-footer
+				include includes/_header.jade
+				.container
+					.row
+						.col-md-5
+							include includes/_main-nav-wrap_catalog.jade
+						.col-md-15
+							.main-breadcrumbs
+								ul
+									li
+										a(href="#") Главная
+									li
+										span Регистрация
+				.thanks-wrap
+					.container
+						.thanks-wrap_title
+							span СПАСИБО ЗА РЕГИСТРАЦИЮ!
+						.thanks-wrap_bd-text
+							span Письмо с подтверждением заказа отправлено на 
+								b andreev@mail.ru
+						.thanks-wrap_text
+							span Теперь Вы можете воспользоваться всеми преимуществами зарегистрированного пользователя.
+						.thanks-wrap_button-wrap
+							a(href="#").btn.fw.blue-btn ОФОРМИТЬ ЗАКАЗ
+
+
+			include includes/_footer.jade
+
+		include includes/_modals.jade
+
+		include includes/js-links.jade

@@ -1,0 +1,105 @@
+doctype
+html
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, height=device-height, initial-scale=1, user-scalable=no, maximum-scale=1.0')
+		title index
+		include includes/css-links.jade
+
+	body
+		include includes/svg.jade
+		.page-wrapp
+			.content-without-footer
+				include includes/_header.jade
+				.container
+					.row
+						.col-md-5
+							include includes/_main-nav-wrap.jade
+						.col-md-15
+							.main-breadcrumbs
+								ul
+									li
+										a(href="#") Главная
+									li
+										span  Оплата
+							.delivery-wrap
+								.delivery-wrap_title
+									span СПОСОБЫ ОПЛАТЫ
+								.delivery-wrap_block.price
+									.delivery-wrap_block_title
+										span ДЛЯ ФИЗИЧЕСКИХ ЛИЦ
+									ul.wi
+										li
+											svg.svg-icon.icon-ul-wi
+												use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#icon-ul-wi" )
+											.title
+												span Наличными курьеру
+											.text
+												span Оплата заказа наличными при получении
+										li
+											svg.svg-icon.icon-ul-wi
+												use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#icon-ul-wi" )
+											.title
+												span Наличными в офисе
+											.text
+												span Оплата заказа в нашем офисе по адресу: Нижний Новгород, ул. Торфяная, 30.
+										li
+											svg.svg-icon.icon-ul-wi
+												use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#icon-ul-wi" )
+											.title
+												span Банковская карта
+												img(src="img/template/pay/visa.png", alt="")
+												img(src="img/template/pay/mc.png", alt="")
+											.text
+												span При оплате  на сайте банковской картой (VISA, MasterCard) – получите скидку 3%
+										li
+											svg.svg-icon.icon-ul-wi
+												use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#icon-ul-wi" )
+											.title
+												span Платежный сервис QIWI
+												img(src="img/template/pay/qiwi.png", alt="")
+											.text
+												span Комиссия – 2,48%
+										li
+											svg.svg-icon.icon-ul-wi
+												use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#icon-ul-wi" )
+											.title
+												span Платежная система WebMoney
+												img(src="img/template/pay/wm.png", alt="")
+											.text
+												span Комиссия – 2,48%
+										li
+											svg.svg-icon.icon-ul-wi
+												use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#icon-ul-wi" )
+											.title
+												span Платежная система ЯндексДеньги
+												img(src="img/template/pay/ya.png", alt="")
+											.text
+												span Комиссия – 1%
+								.delivery-wrap_block.price
+									.delivery-wrap_block_title
+										span ДЛЯ ЮРИДИЧЕСКИХ ЛИЦ
+									ul.wi
+										li
+											svg.svg-icon.icon-ul-wi
+												use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#icon-ul-wi" )
+											.title
+												span Безналичный расчет
+											.text
+												span Оплата по счету для юрифических лиц. После оформления заказа с Вами свяжется наш менеджер и выставит счет. Срок оплаты по выставленному счету – 3 дня.
+										li
+											svg.svg-icon.icon-ul-wi
+												use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#icon-ul-wi" )
+											.title
+												span Постоплата
+											.text
+												span Оплата после получения заказа при условии заключения договора и предоставления гарантий.
+											
+
+
+			include includes/_footer.jade
+
+		include includes/_modals.jade
+
+		include includes/js-links.jade

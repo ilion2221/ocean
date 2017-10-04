@@ -1,0 +1,38 @@
+doctype
+html
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, height=device-height, initial-scale=1, user-scalable=no, maximum-scale=1.0')
+		title index
+		include includes/css-links.jade
+
+	body
+		include includes/svg.jade
+		.page-wrapp
+			.content-without-footer
+				include includes/_header.jade
+
+				.page-404-wrap
+					.container
+						.page-404-wrap_icon-wrap
+							svg.svg-icon.icon-404
+								use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#icon-404" )
+						.page-404-wrap_title
+							span СТРАНИЦА НЕ НАЙДЕНА!
+						.page-404-wrap_text
+							span Страница, на которую вы пытаетесь попасть, не существует. Воспользуйтесь основным меню сайта для поиска интересующей вас информации.
+						.page-404-wrap_catalog-link
+							a(href="#")
+								span.text КАТАЛОГ ТОВАРОВ
+								span.lines-icon
+									span
+									span
+									span
+
+
+			include includes/_footer.jade
+
+		include includes/_modals.jade
+
+		include includes/js-links.jade

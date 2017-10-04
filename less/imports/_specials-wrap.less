@@ -1,0 +1,109 @@
+/*======================================
+=            .specials-wrap            =
+======================================*/
+
+.specials-wrap {
+	margin-top: 35px;
+	padding-bottom: 80px;
+	@media (max-width: @screen-md-max) {}
+	@media (max-width: @screen-sm-max) {}
+	@media (max-width: @screen-xs-max) {
+		margin-top: 20px;
+		padding-bottom: 40px;
+	}
+}
+
+.specials-wrap_title {
+	color: #023064;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.specials-wrap_lines-wrap {
+	margin-top: 41px;
+	@media (max-width: @screen-md-max) {}
+	@media (max-width: @screen-sm-max) {}
+	@media (max-width: @screen-xs-max) {
+		margin-top: 20px;
+	}
+}
+
+.specials-wrap_line + .specials-wrap_line {
+	margin-top: 37px;
+	@media (max-width: @screen-md-max) {}
+	@media (max-width: @screen-sm-max) {}
+	@media (max-width: @screen-xs-max) {
+		margin-top: 30px;
+	}
+}
+
+.specials-wrap_line {
+	.img-wrap {
+		float: left;
+		width: 260px;
+		margin-top: 3px;
+		@media (max-width: @screen-md-max) {
+			width: 200px;
+		}
+		@media (max-width: @screen-sm-max) {}
+		@media (max-width: @screen-xs-max) {
+			width: 100px;
+		}
+		@media (max-width: 450px) {
+			display: none;
+		}
+		img {
+			max-width: 100%;
+			width: auto;
+			height: auto;
+		}
+	}
+	.text-wrap {
+		overflow: hidden;
+		padding-left: 20px;
+		padding-right: 80px;
+		@media (max-width: @screen-md-max) {}
+		@media (max-width: @screen-sm-max) {
+			padding-right: 0;
+		}
+		@media (max-width: @screen-xs-max) {
+			padding-left: 10px;
+		}
+		@media (max-width: 450px) {
+			padding-left: 0;
+		}
+	}
+	.text-wrap_title {
+		font-size: 17px;
+		color: #737373;
+		font-weight: 700;
+		line-height: 21px;
+	}
+	.text-wrap_text {
+		margin-top: 21px;
+		@media (max-width: @screen-md-max) {}
+		@media (max-width: @screen-sm-max) {}
+		@media (max-width: @screen-xs-max) {}
+		@media (max-width: 450px) {
+			margin-top: 3px;
+		}
+		p {
+			margin: 0;
+			padding: 0;
+		}
+		font-size: 15px;
+		color: #737373;
+		line-height: 22px;
+	}
+
+
+}
+.specials-wrap_button-wrap {
+	margin-top: 40px;
+	width: 160px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*=====  End of .specials-wrap  ======*/

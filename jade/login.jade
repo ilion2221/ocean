@@ -1,0 +1,80 @@
+doctype
+html
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, height=device-height, initial-scale=1, user-scalable=no, maximum-scale=1.0')
+		title index
+		include includes/css-links.jade
+
+	body
+		include includes/svg.jade
+		.page-wrapp
+			.content-without-footer
+				include includes/_header.jade
+				.container
+					.row
+						.col-md-5
+							include includes/_main-nav-wrap_catalog.jade
+						.col-md-15
+							.main-breadcrumbs
+								ul
+									li
+										a(href="#") Главная
+									li
+										span Вход на сайт
+
+				.login-wrap
+					.container.clearfix
+						.login-wrap_login-side
+							.login-wrap_login-side_title
+								span ВОЙТИ НА САЙТ
+							form(action="#")
+								.m-input-wrap
+									.m-input-wrap_text
+										span E-mail или телефон *
+									input(type="text")
+								.m-input-wrap
+									.m-input-wrap_text
+										span Пароль *
+									input(type="password")
+								.buttons-wrap
+									.buttons-wrap_enter-btn
+										button.btn.blu-bd-btn.fw.light-blue ВОЙТИ
+									.buttons-wrap_renew-pass
+										a(href="#") Забыли пароль?
+						.login-wrap_reg-side
+							.login-wrap_reg-side_title
+								span РЕГИСТРАЦИЯ
+							.login-wrap_reg-side_text
+								p Регистрируясь на сайте, вы получаете следующие преимущества:
+							ul 
+								li
+									svg.svg-icon.check-icon
+										use(xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="#check-icon")
+									span Индивидуальные скидки
+								li
+									svg.svg-icon.check-icon
+										use(xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="#check-icon")
+									span Доступ к спецпредложениям
+								li
+									svg.svg-icon.check-icon
+										use(xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="#check-icon")
+									span Отслеживание статуса выполнения заказа
+								li
+									svg.svg-icon.check-icon
+										use(xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="#check-icon")
+									span Информация о новинках и акциях
+							.login-wrap_reg-side_button
+								a(href="#").btn.blue-btn.fw ЗАРЕГИСТРИРОВАТЬСЯ
+
+
+
+
+
+
+			include includes/_footer.jade
+
+		include includes/_modals.jade
+
+		include includes/js-links.jade

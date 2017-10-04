@@ -1,0 +1,129 @@
+doctype
+html
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, height=device-height, initial-scale=1, user-scalable=no, maximum-scale=1.0')
+		title index
+		include includes/css-links.jade
+
+	body
+		include includes/svg.jade
+		.page-wrapp
+			.content-without-footer
+				include includes/_header.jade
+				.container
+					.row
+						.col-md-5
+							include includes/_main-nav-wrap_catalog.jade
+						.col-md-15
+							.main-breadcrumbs
+								ul
+									li
+										a(href="#") Главная
+									li
+										span Личный кабинет
+
+				.lk-wrap
+					.container
+						.lk-wrap_title
+							span ЛИЧНЫЙ КАБИНЕТ
+						.row
+							.col-md-5
+								.lk-wrap_nav
+									.lk-wrap_nav_block
+										.lk-wrap_nav_block_title
+											span МОИ ЗАКАЗЫ
+										.lk-wrap_nav_block_body
+											ul 
+												li
+													a(href="#") 
+														span.text Текущие
+												li
+													a(href="#") 
+														span.text Завершенные
+									.lk-wrap_nav_block
+										.lk-wrap_nav_block_title
+											span НАСТРОЙКИ
+										.lk-wrap_nav_block_body
+											ul 
+												li.active
+													a(href="#") 
+														span.text Личные данные
+												li
+													a(href="#") 
+														span.text Смена пароля
+												li
+													a(href="#") 
+														span.text Уведомления
+															span.r 3
+												li
+													a(href="#") 
+														span.text Мои организации
+
+							.col-md-15
+								.lk-wrap_content
+									.lk-wrap_content_title
+										span Личные данные
+									.lk-wrap_content_personal-info-wrap
+										.personal-info-wrap_text
+											span Эта информация доступна только Вам!
+										.personal-info-wrap_line.clearfix
+											.edit-icon
+												svg.svg-icon.pencil-icon
+													use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#pencil-icon" )
+											.text1
+												span Код клиента
+											.text2
+												span 23715
+												.m-input-wrap
+													input(type="text", value="23715")
+										.personal-info-wrap_line.clearfix
+											.edit-icon
+												svg.svg-icon.pencil-icon
+													use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#pencil-icon" )
+											.text1
+												span Ф. И. О.
+											.text2
+												span Андреев Владимир Владимирович
+												.m-input-wrap
+													input(type="text", value="Андреев Владимир Владимирович")
+										.personal-info-wrap_line.clearfix
+											.edit-icon
+												svg.svg-icon.pencil-icon
+													use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#pencil-icon" )
+											.text1
+												span Контатктный телефон
+											.text2
+												span +7 (910) 210-30-22
+												.m-input-wrap
+													input(type="text", value="+7 (910) 210-30-22")
+										.personal-info-wrap_line.clearfix
+											.edit-icon
+												svg.svg-icon.pencil-icon
+													use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#pencil-icon" )
+											.text1
+												span E-mail
+											.text2
+												span andreev@mail.ru
+												.m-input-wrap
+													input(type="text", value="andreev@mail.ru")
+										.personal-info-wrap_line.clearfix
+											.edit-icon
+												svg.svg-icon.pencil-icon
+													use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#pencil-icon" )
+											.text1
+												span Адрес доставки
+											.text2
+												span г. Нижний Новгород, ул. Алексеевская, 31, кв. 56
+												.m-input-wrap
+													input(type="text", value="г. Нижний Новгород, ул. Алексеевская, 31, кв. 56")
+
+
+
+
+			include includes/_footer.jade
+
+		include includes/_modals.jade
+
+		include includes/js-links.jade

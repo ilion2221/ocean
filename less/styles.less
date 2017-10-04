@@ -1,0 +1,186 @@
+// bootstrap less files
+@import "less/variables.less";
+@import "less/mixins.less";
+@import "less/normalize.less";
+@import "less/print.less";
+@import "less/glyphicons.less";
+@import "less/scaffolding.less";
+@import "less/type.less";
+@import "less/code.less";
+@import "less/grid.less";
+@import "less/tables.less";
+@import "less/forms.less";
+@import "less/buttons.less";
+@import "less/component-animations.less";
+// @import "less/navs.less";
+// @import "less/navbar.less";
+// @import "less/breadcrumbs.less";
+@import "less/pagination.less";
+@import "less/dropdowns.less";
+// @import "less/button-groups.less";
+// @import "less/input-groups.less";
+// @import "less/pager.less";
+// @import "less/labels.less";
+// @import "less/badges.less";
+// @import "less/jumbotron.less";
+// @import "less/thumbnails.less";
+// @import "less/alerts.less";
+// @import "less/progress-bars.less";
+// @import "less/media.less";
+// @import "less/list-group.less";
+// @import "less/panels.less";
+// @import "less/responsive-embed.less";
+// @import "less/wells.less";
+@import "less/close.less";
+@import "less/modals.less";
+@import "less/tooltip.less";
+@import "less/popovers.less";
+@import "less/carousel.less";
+@import "less/utilities.less";
+@import "less/responsive-utilities.less";
+@import "less/mixins/alerts.less";
+@import "less/mixins/alerts.less";
+@import "less/mixins/background-variant.less";
+@import "less/mixins/border-radius.less";
+@import "less/mixins/buttons.less";
+@import "less/mixins/center-block.less";
+@import "less/mixins/clearfix.less";
+@import "less/mixins/forms.less";
+@import "less/mixins/gradients.less";
+@import "less/mixins/grid-framework.less";
+@import "less/mixins/grid-framework.less";
+@import "less/mixins/grid.less";
+@import "less/mixins/hide-text.less";
+@import "less/mixins/image.less";
+@import "less/mixins/image.less";
+@import "less/mixins/labels.less";
+@import "less/mixins/labels.less";
+@import "less/mixins/list-group.less";
+@import "less/mixins/nav-divider.less";
+@import "less/mixins/nav-vertical-align.less";
+@import "less/mixins/opacity.less";
+@import "less/mixins/pagination.less";
+@import "less/mixins/pagination.less";
+@import "less/mixins/panels.less";
+@import "less/mixins/progress-bar.less";
+@import "less/mixins/reset-filter.less";
+@import "less/mixins/resize.less";
+@import "less/mixins/responsive-visibility.less";
+@import "less/mixins/size.less";
+@import "less/mixins/tab-focus.less";
+@import "less/mixins/table-row.less";
+@import "less/mixins/text-emphasis.less";
+@import "less/mixins/text-overflow.less";
+@import "less/mixins/vendor-prefixes.less";
+
+// custom less files
+@import "variables.less";
+@import "icons.less";
+@import "btns.less";
+
+// basic styles
+a, button, input, textarea {
+	outline: 0 !important;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+	position: relative;
+	font-family: 'proximanova';
+}
+
+.page-wrapp {
+	overflow: hidden;
+	position: relative;
+	min-height: 100%;
+}
+.icon {
+	display: inline-block;
+	vertical-align: top;
+}
+
+// custom font-face
+.font-face('proximanova', 'ProximaNovaBlack', normal, 900);
+.font-face('proximanova', 'ProximaNovaBlackItalic', italic, 900);
+.font-face('proximanova', 'ProximaNovaExtrabold', normal, 800);
+.font-face('proximanova', 'ProximaNovaExtraboldItalic', italic, 800);
+.font-face('proximanova', 'ProximaNovaBold', normal, 700);
+.font-face('proximanova', 'ProximaNovaBoldItalic', italic, 700);
+.font-face('proximanova', 'ProximaNovaSemibold', normal, 600);
+.font-face('proximanova', 'ProximaNovaSemiboldItalic', italic, 600);
+.font-face('proximanova', 'ProximaNovaRegular', normal, 400);
+.font-face('proximanova', 'ProximaNovaRegularItalic', italic, 400);
+.font-face('proximanova', 'ProximaNovaLight', normal, 300);
+.font-face('proximanova', 'ProximaNovaLightItalic', italic, 300);
+.font-face('proximanova', 'ProximaNovaThin', normal, 100);
+.font-face('proximanova', 'ProximaNovaThinItalic', italic, 100);
+
+.font-face ('rub', 'RUBSN', normal, 400);
+
+.rouble {
+	font-family: 'rub';
+}
+
+
+
+
+// template less parts import
+@import "imports/_header.less";
+@import "imports/_main-nav.less";
+@import "imports/_home-slider-wrap.less";
+@import "imports/_home-adv-blocks-wrap.less";
+@import "imports/_main-partners-block-wrap.less";
+@import "imports/_main-items-wrap.less";
+@import "imports/_main-text-block.less";
+@import "imports/_footer.less";
+@import "imports/_modals.less";
+@import "imports/_main-breadcrumbs.less";
+@import "imports/_full_catalog.less";
+@import "imports/_catalog-wrap.less";
+@import "imports/_good-item.less";
+@import "imports/_login-wrap.less";
+@import "imports/_reg-wrap.less";
+@import "imports/_lk-wrap.less";
+@import "imports/_page-404-wrap.less";
+@import "imports/_specials-wrap.less";
+@import "imports/_delivery-wrap.less";
+@import "imports/_contacts-wrap.less";
+@import "imports/_cart.less";
+
+.go-to-top {
+	position: fixed;
+	display: block;
+	text-decoration: none !important;
+	width: 40px;
+	height: 40px;
+	bottom: 0;
+	right: 0;
+	background: #cccccc;
+	transition: all 0.3s ease;
+	transform: translateY(100%);
+	&.active {
+		transform: translateY(0);
+	}
+	&:hover {
+		background: #999999;
+	}
+	.arrow-icon {
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    margin-top: -7px;
+	    margin-left: -10px;
+	    width: 20px;
+	    height: 18px;
+	    fill: none;
+	    stroke: #fff;
+	    stroke-width: 2px;
+	    fill-rule: evenodd;
+	    -webkit-transform: rotate(270deg);
+	    -ms-transform: rotate(270deg);
+	    transform: rotate(270deg);
+	    z-index: 2;
+	}
+}
